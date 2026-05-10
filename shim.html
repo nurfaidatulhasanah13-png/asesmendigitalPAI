@@ -1,0 +1,2388 @@
+<!DOCTYPE html>
+<!-- saved from url=(0132)blob:https://05w2gcwvmefsy81r8uryk1cjv5kx1j0ccpzgiroamdyxwo1t7t-h906969431.scf.usercontent.goog/fe1375b2-6300-40cf-89e2-67b049a88b43 -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg4OWY4ODcxMTZjMzU5OGVmZDZlZWU4ODA4YjhhZWYwMTIwYmFjOWYiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxMDA0MDA2ODY4OTI4NTAyMDA3MiIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjXzg0ZTFlM2RjOGRiYzFjNWVfaW5kZXguaHRtbC04MTAifSwiZXhwIjoxNzc4NDIxNTUxLCJpYXQiOjE3Nzg0MTc5NTEsImFsZyI6IlJTMjU2In0.CWIaMFp_Ckcbh82os6dcVWNWU5wKEwUoyJJbOESRdrJgKDe0rPq9Dc21KvdTVebWXzOZjg66y6EuGjXyY9g-PDZDXMLSJa4ixNARcMGVn4U--5oty2xHBqu0KKabTajFjYyF3S5Ur4tnL4CZZyc7azeB7w7PpeKt2snhoL9oMwX8VQHbc1siJ9gNX8GVF8xuK1HzKJFnX11rztqH42AS-K35ZemAxIuvBc_ReMsFZu_3O4ofMfV0q_MVuY9VRDHdowEEeRS8LFnkKr6HtY1FZMcAcbWNcsT-KkyBRuwM1attpZUxGKeejvizfMUDcEBl4ngzna5hffekRp2ykGa9mw","c_84e1e3dc8dbc1c5e_index.html-810")</script><script>(function(){'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var d=n;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&h(d,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});p("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var v=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let x=null;function y(a={}){return x?x:a.l?x=a.l:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var d;if(!(d=b.width)){d=z(a,"border-left-width");var c=z(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=z(a,"border-top-width"),c=z(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function B(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,d){return t(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return C(c)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function G(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=F(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,d){return t(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(d({o:c,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function K(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function L(a,b,d){return t(function*(){var c=K(a,b,d.C);if(J[c]!=null)return J[c];d.u&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield I(a,d.i,({o:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.B||""}return J[c]=e})};const M={P:"application/font-woff",R:"application/font-woff",N:"application/font-truetype",v:"application/vnd.ms-fontobject",H:"image/png",F:"image/jpeg",D:"image/jpeg",A:"image/gif",M:"image/tiff",L:"image/svg+xml",O:"image/webp"};function N(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function O(a){return t(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function aa(a,b){return t(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return B(d)}d=a.poster;d=yield L(d,M[N(d).toLowerCase()]||"",b);return B(d)})}
+function ba(a,b){return t(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield P(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ca(a,b){return t(function*(){return E(a,HTMLCanvasElement)?O(a):E(a,HTMLVideoElement)?aa(a,b):E(a,HTMLIFrameElement)?ba(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function da(a,b,d){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||E(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>P(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ea(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):y(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function fa(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function ha(a,b){return t(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield P(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function P(a,b,d){return t(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ca(c,b)).then(c=>da(a,c,b)).then(c=>{E(c,Element)&&(ea(a,c,b),G(a,c,":before",b),G(a,c,":after",b),E(a,HTMLTextAreaElement)&&(c.textContent=a.value),E(a,HTMLInputElement)&&c.setAttribute("value",a.value),fa(a,c));return c}).then(c=>ha(c,b)):null})};const Q=/url\((['"]?)([^'"]+?)\1\)/g,ia=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,ja=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ka(a){var b=[];a.replace(Q,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!H(d))}
+function la(a,b,d,c){return t(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield L(e,M[N(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function ma(a,{I:b}){return b?a.replace(ja,d=>{for(;;){let [c,,e]=ia.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function R(a,b,d){return t(function*(){if(a.search(Q)===-1)return a;var c=ma(a,d);return ka(c).reduce((e,f)=>e.then(g=>la(g,f,b,d)),Promise.resolve(c))})};function S(a,b,d){return t(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield R(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function na(a,b){return t(function*(){(yield S("background",a,b))||(yield S("background-image",a,b));(yield S("mask",a,b))||(yield S("-webkit-mask",a,b))||(yield S("mask-image",a,b))||(yield S("-webkit-mask-image",a,b))})}
+function oa(a,b){return t(function*(){var d=E(a,HTMLImageElement);if(d&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield L(c,M[N(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.m?(...k)=>{try{f(b.m(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function pa(a,b){return t(function*(){var d=w(a.childNodes).map(c=>T(c,b));yield Promise.all(d).then(()=>a)})}function T(a,b){return t(function*(){E(a,Element)&&(yield na(a,b),yield oa(a,b),yield pa(a,b))})};const U={};function V(a){return t(function*(){var b=U[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return U[a]=b})}function W(a,b){return t(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.i,({result:k})=>{d=d.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>d)})}
+function X(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function qa(a,b){return t(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=V(f.href).then(m=>W(m,b)).then(m=>X(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Da){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&c.push(V(e.href).then(k=>W(k,b)).then(k=>X(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function ra(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(Q)!==-1)}function sa(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=w(a.ownerDocument.styleSheets);d=yield qa(d,b);return ra(d)})}
+function ta(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function ua(a,b){return t(function*(){var d=yield sa(a,b),c=ta(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>R(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function va(a,b){return t(function*(){var d=b.j!=null?b.j:b.K?null:yield ua(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function wa(a,b={}){return t(function*(){var {width:d,height:c}=A(a,b),e=yield P(a,b,!0);yield va(e,b);yield T(e,b);u(e,b);return yield D(e,d,c)})}
+function xa(a,b={}){return t(function*(){var {width:d,height:c}=A(a,b),e=yield wa(a,b);e=yield B(e);var f=document.createElement("canvas"),g=f.getContext("2d"),k=b.G||window.devicePixelRatio||1,m=b.h||d,q=b.g||c;f.width=m*k;f.height=q*k;!b.J&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function ya(a,b={}){return t(function*(){return(yield xa(a,b)).toDataURL()})};const za=["gemini.google.com","corp.google.com","proxy.googlers.com"];function Y(){return document.body.querySelectorAll('[class*="animate"]').length>0}function Z(a){return t(function*(){try{return yield ya(a,{h:a.offsetWidth,g:a.offsetHeight})}catch(d){var b=a.offsetHeight;let c=document.createElement("canvas");c.width=a.offsetWidth;c.height=b;return c.toDataURL("image/png")}})}
+function Aa(){return t(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ba(a){return t(function*(){var b=document.body;if(Y()){var d=yield Aa();b=d;document.body.appendChild(d)}d=yield Z(b);Y()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:d,topOffset:document.documentElement.scrollTop},a.origin)})}function Ca(a){return t(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(za.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ba(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ca(a)))}}));
+})();</script><script>(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script>
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.i=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.g=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.h="";var l=0,t=null,r=null,q=[],F=new TextEncoder,G=new TextDecoder;
+c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*16|0;return(f===
+"x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;(g=t)==null||g.postMessage(a)}};
+Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script>((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image-preview","imageTransformModelName":"gemini-3-pro-image-preview-11-2025","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image"]})</script><script>(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script>(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesmen Digital PAI</title>
+    
+    <script src="https://cdn.tailwindcss.com/"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;family=Amiri:wght@400;700&amp;display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --color-primary: #047857;
+            --color-secondary: #059669;
+            --color-bg: #f0fdf4;
+        }
+
+        body { font-family: 'Poppins', sans-serif; background-color: var(--color-bg); color: #1e293b; overflow-x: hidden; }
+        .font-arabic { font-family: 'Amiri', serif; }
+        .fade-in { animation: fadeIn 0.5s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .spin-slow { animation: spin 12s linear infinite; }
+        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .landing-card-custom {
+            background: linear-gradient(135deg, #065f46 0%, #047857 100%);
+            backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); color: white; position: relative; overflow: hidden;
+        }
+
+        .islamic-bg {
+            background-color: #064e3b;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.627 0l.83.828-1.415 1.415-.828-.828-.828.828-1.415-1.415.828-.828-.828-.828 1.415-1.415.828.828.828-.828 1.415 1.415-.828.828zM22.485 0l.83.828-1.415 1.415-.828-.828-.828.828-1.415-1.415.828-.828-.828-.828 1.415-1.415.828.828.828-.828 1.415 1.415-.828.828zM0 22.485l.828.83-1.415 1.415-.828-.828-.828.828L-2.83 22.485l.828-.828-.828-.828 1.415-1.415.828.828.828-.828 1.415 1.415-.828.828zM0 54.627l.828.83-1.415 1.415-.828-.828-.828.828L-2.83 54.627l.828-.828-.828-.828 1.415-1.415.828.828.828-.828 1.415 1.415-.828.828zM56.657 3.456a28.23 28.23 0 0 1-5.029 4.376c-2.072 1.393-4.42 2.37-6.88 2.87-2.46.5-4.992.404-7.426-.282-2.434-.686-4.71-1.92-6.696-3.628L30 6.226l-.626.566c-1.986 1.708-4.262 2.942-6.696 3.628-2.434.686-4.966.782-7.426.282-2.46-.5-4.808-1.477-6.88-2.87a28.23 28.23 0 0 1-5.029-4.376l2.122-2.121c1.39 1.488 2.972 2.805 4.71 3.923 1.737 1.118 3.624 1.935 5.612 2.432 1.988.497 4.053.608 6.07.332 2.017-.276 3.967-1.026 5.76-2.215L30 3.515l2.383 2.298c1.793 1.19 3.743 1.94 5.76 2.216 2.017.276 4.082.165 6.07-.332 1.988-.497 3.875-1.314 5.612-2.432 1.738-1.118 3.32-2.435 4.71-3.923l2.122 2.121z' fill='%23fbbf24' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        .watermark-fixed {
+            position: fixed; bottom: 20px; right: 20px; font-size: 0.75rem; font-weight: 600; font-style: italic;
+            z-index: 9999; pointer-events: none; transition: color 0.5s ease;
+        }
+        
+        .custom-select {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23059669' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.5rem center; background-repeat: no-repeat; background-size: 1.5em 1.5em; padding-right: 2.5rem;
+            appearance: none; -webkit-appearance: none;
+        }
+
+        #toast {
+            visibility: hidden; min-width: 250px; background-color: #333; color: #fff; text-align: center;
+            border-radius: 8px; padding: 16px; position: fixed; z-index: 1000; left: 50%; bottom: 30px;
+            transform: translateX(-50%); font-size: 14px; opacity: 0; transition: opacity 0.5s, bottom 0.5s;
+        }
+        #toast.show { visibility: visible; opacity: 1; bottom: 50px; }
+
+        @media print {
+            body * { visibility: hidden; }
+            .print-area, .print-area * { visibility: visible; }
+            .print-area { position: absolute; left: 0; top: 0; width: 100%; padding: 20px; background: white; }
+            .no-print { display: none !important; }
+            aside { display: none; }
+            main { margin: 0; padding: 0; width: 100%; }
+            .glass-card, .bg-white { box-shadow: none; border: 1px solid #ccc; }
+            * { -webkit-print-color-adjust: exact !important;   print-color-adjust: exact !important; }
+        }
+
+        #mobile-menu-btn { display: none; }
+        @media (max-width: 768px) {
+            #mobile-menu-btn { display: block; }
+            .sidebar { transform: translateX(-100%); transition: transform 0.3s ease-in-out; }
+            .sidebar.open { transform: translateX(0); }
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.-bottom-40{bottom:-10rem}.-left-40{left:-10rem}.-right-40{right:-10rem}.-top-40{top:-10rem}.left-4{left:1rem}.left-6{left:1.5rem}.top-0{top:0px}.top-4{top:1rem}.top-6{top:1.5rem}.right-0{right:0px}.z-10{z-index:10}.z-20{z-index:20}.z-40{z-index:40}.z-50{z-index:50}.z-\[100\]{z-index:100}.mx-auto{margin-left:auto;margin-right:auto}.my-1{margin-top:0.25rem;margin-bottom:0.25rem}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-1{margin-left:0.25rem}.mr-1{margin-right:0.25rem}.mt-1{margin-top:0.25rem}.mt-10{margin-top:2.5rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.-mr-20{margin-right:-5rem}.-mt-20{margin-top:-5rem}.mr-2{margin-right:0.5rem}.-mt-16{margin-top:-4rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-16{height:4rem}.h-20{height:5rem}.h-24{height:6rem}.h-8{height:2rem}.h-96{height:24rem}.h-\[85vh\]{height:85vh}.h-full{height:100%}.h-64{height:16rem}.h-fit{height:-moz-fit-content;height:fit-content}.max-h-\[600px\]{max-height:600px}.max-h-\[400px\]{max-height:400px}.max-h-\[80vh\]{max-height:80vh}.min-h-screen{min-height:100vh}.w-1\/3{width:33.333333%}.w-1\/4{width:25%}.w-10{width:2.5rem}.w-16{width:4rem}.w-20{width:5rem}.w-24{width:6rem}.w-28{width:7rem}.w-32{width:8rem}.w-5{width:1.25rem}.w-8{width:2rem}.w-96{width:24rem}.w-full{width:100%}.w-64{width:16rem}.min-w-\[150px\]{min-width:150px}.min-w-\[200px\]{min-width:200px}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.max-w-3xl{max-width:48rem}.max-w-xs{max-width:20rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}.border-spacing-0{--tw-border-spacing-x:0px;--tw-border-spacing-y:0px;border-spacing:var(--tw-border-spacing-x) var(--tw-border-spacing-y)}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.cursor-pointer{cursor:pointer}.list-disc{list-style-type:disc}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-gray-100 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(243 244 246 / var(--tw-divide-opacity, 1))}.divide-gray-200 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(229 231 235 / var(--tw-divide-opacity, 1))}.divide-gray-50 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(249 250 251 / var(--tw-divide-opacity, 1))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded-b-\[3rem\]{border-bottom-right-radius:3rem;border-bottom-left-radius:3rem}.rounded-l-lg{border-top-left-radius:0.5rem;border-bottom-left-radius:0.5rem}.rounded-r-lg{border-top-right-radius:0.5rem;border-bottom-right-radius:0.5rem}.border{border-width:1px}.border-4{border-width:4px}.border-b{border-bottom-width:1px}.border-l-2{border-left-width:2px}.border-t{border-top-width:1px}.border-t-4{border-top-width:4px}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138 / var(--tw-border-opacity, 1))}.border-blue-100{--tw-border-opacity:1;border-color:rgb(219 234 254 / var(--tw-border-opacity, 1))}.border-blue-200{--tw-border-opacity:1;border-color:rgb(191 219 254 / var(--tw-border-opacity, 1))}.border-emerald-100{--tw-border-opacity:1;border-color:rgb(209 250 229 / var(--tw-border-opacity, 1))}.border-emerald-200{--tw-border-opacity:1;border-color:rgb(167 243 208 / var(--tw-border-opacity, 1))}.border-emerald-400{--tw-border-opacity:1;border-color:rgb(52 211 153 / var(--tw-border-opacity, 1))}.border-emerald-500{--tw-border-opacity:1;border-color:rgb(16 185 129 / var(--tw-border-opacity, 1))}.border-emerald-800{--tw-border-opacity:1;border-color:rgb(6 95 70 / var(--tw-border-opacity, 1))}.border-gray-100{--tw-border-opacity:1;border-color:rgb(243 244 246 / var(--tw-border-opacity, 1))}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity, 1))}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.border-red-100{--tw-border-opacity:1;border-color:rgb(254 226 226 / var(--tw-border-opacity, 1))}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.border-yellow-100{--tw-border-opacity:1;border-color:rgb(254 249 195 / var(--tw-border-opacity, 1))}.border-yellow-200{--tw-border-opacity:1;border-color:rgb(254 240 138 / var(--tw-border-opacity, 1))}.border-yellow-400{--tw-border-opacity:1;border-color:rgb(250 204 21 / var(--tw-border-opacity, 1))}.border-emerald-600{--tw-border-opacity:1;border-color:rgb(5 150 105 / var(--tw-border-opacity, 1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.bg-emerald-200{--tw-bg-opacity:1;background-color:rgb(167 243 208 / var(--tw-bg-opacity, 1))}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-emerald-800{--tw-bg-opacity:1;background-color:rgb(6 95 70 / var(--tw-bg-opacity, 1))}.bg-emerald-900{--tw-bg-opacity:1;background-color:rgb(6 78 59 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/50{background-color:rgb(255 255 255 / 0.5)}.bg-white\/95{background-color:rgb(255 255 255 / 0.95)}.bg-yellow-200{--tw-bg-opacity:1;background-color:rgb(254 240 138 / var(--tw-bg-opacity, 1))}.bg-yellow-400{--tw-bg-opacity:1;background-color:rgb(250 204 21 / var(--tw-bg-opacity, 1))}.bg-yellow-50{--tw-bg-opacity:1;background-color:rgb(254 252 232 / var(--tw-bg-opacity, 1))}.bg-yellow-500{--tw-bg-opacity:1;background-color:rgb(234 179 8 / var(--tw-bg-opacity, 1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-green-50{--tw-bg-opacity:1;background-color:rgb(240 253 244 / var(--tw-bg-opacity, 1))}.bg-green-600{--tw-bg-opacity:1;background-color:rgb(22 163 74 / var(--tw-bg-opacity, 1))}.bg-white\/20{background-color:rgb(255 255 255 / 0.2)}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.from-transparent{--tw-gradient-from:transparent var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-emerald-900\/50{--tw-gradient-to:rgb(6 78 59 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), rgb(6 78 59 / 0.5) var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-emerald-950{--tw-gradient-to:#022c22 var(--tw-gradient-to-position)}.p-1{padding:0.25rem}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.p-5{padding:1.25rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.pb-2{padding-bottom:0.5rem}.pb-4{padding-bottom:1rem}.pl-12{padding-left:3rem}.pl-4{padding-left:1rem}.pl-5{padding-left:1.25rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.pb-24{padding-bottom:6rem}.pb-12{padding-bottom:3rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.align-top{vertical-align:top}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-blue-700\/80{color:rgb(29 78 216 / 0.8)}.text-blue-800{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.text-blue-900{--tw-text-opacity:1;color:rgb(30 58 138 / var(--tw-text-opacity, 1))}.text-emerald-100{--tw-text-opacity:1;color:rgb(209 250 229 / var(--tw-text-opacity, 1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70 / var(--tw-text-opacity, 1))}.text-emerald-900{--tw-text-opacity:1;color:rgb(6 78 59 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-red-300{--tw-text-opacity:1;color:rgb(252 165 165 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-white\/30{color:rgb(255 255 255 / 0.3)}.text-white\/80{color:rgb(255 255 255 / 0.8)}.text-yellow-200{--tw-text-opacity:1;color:rgb(254 240 138 / var(--tw-text-opacity, 1))}.text-yellow-700{--tw-text-opacity:1;color:rgb(161 98 7 / var(--tw-text-opacity, 1))}.text-yellow-800{--tw-text-opacity:1;color:rgb(133 77 14 / var(--tw-text-opacity, 1))}.text-yellow-900{--tw-text-opacity:1;color:rgb(113 63 18 / var(--tw-text-opacity, 1))}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6 / var(--tw-text-opacity, 1))}.text-green-600{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.text-yellow-600{--tw-text-opacity:1;color:rgb(202 138 4 / var(--tw-text-opacity, 1))}.text-blue-500{--tw-text-opacity:1;color:rgb(59 130 246 / var(--tw-text-opacity, 1))}.text-emerald-200{--tw-text-opacity:1;color:rgb(167 243 208 / var(--tw-text-opacity, 1))}.text-emerald-500{--tw-text-opacity:1;color:rgb(16 185 129 / var(--tw-text-opacity, 1))}.text-purple-500{--tw-text-opacity:1;color:rgb(168 85 247 / var(--tw-text-opacity, 1))}.text-yellow-300{--tw-text-opacity:1;color:rgb(253 224 71 / var(--tw-text-opacity, 1))}.text-yellow-500{--tw-text-opacity:1;color:rgb(234 179 8 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.opacity-20{opacity:0.2}.opacity-5{opacity:0.05}.mix-blend-multiply{mix-blend-mode:multiply}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-emerald-200{--tw-shadow-color:#a7f3d0;--tw-shadow:var(--tw-shadow-colored)}.shadow-yellow-200{--tw-shadow-color:#fef08a;--tw-shadow:var(--tw-shadow-colored)}.outline-none{outline:2px solid transparent;outline-offset:2px}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-md{--tw-drop-shadow:drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-shadow{transition-property:box-shadow;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-500{transition-duration:500ms}.duration-300{transition-duration:300ms}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-amber-200:hover{--tw-bg-opacity:1;background-color:rgb(253 230 138 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-50:hover{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-700:hover{--tw-bg-opacity:1;background-color:rgb(4 120 87 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-800:hover{--tw-bg-opacity:1;background-color:rgb(6 95 70 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-50:hover{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.hover\:bg-red-50:hover{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity, 1))}.hover\:bg-red-500\/20:hover{background-color:rgb(239 68 68 / 0.2)}.hover\:bg-white\/10:hover{background-color:rgb(255 255 255 / 0.1)}.hover\:bg-amber-600:hover{--tw-bg-opacity:1;background-color:rgb(217 119 6 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.hover\:bg-green-700:hover{--tw-bg-opacity:1;background-color:rgb(21 128 61 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/30:hover{background-color:rgb(255 255 255 / 0.3)}.hover\:bg-yellow-600:hover{--tw-bg-opacity:1;background-color:rgb(202 138 4 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-200:hover{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.hover\:text-blue-800:hover{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.hover\:text-red-200:hover{--tw-text-opacity:1;color:rgb(254 202 202 / var(--tw-text-opacity, 1))}.hover\:text-red-700:hover{--tw-text-opacity:1;color:rgb(185 28 28 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:shadow-2xl:hover{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-emerald-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(16 185 129 / var(--tw-ring-opacity, 1))}.focus\:ring-blue-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246 / var(--tw-ring-opacity, 1))}.focus\:ring-yellow-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(234 179 8 / var(--tw-ring-opacity, 1))}.disabled\:bg-gray-100:disabled{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.group:hover .group-hover\:bg-yellow-100{--tw-bg-opacity:1;background-color:rgb(254 249 195 / var(--tw-bg-opacity, 1))}@media (min-width: 768px){.md\:sticky{position:sticky}.md\:col-span-2{grid-column:span 2 / span 2}.md\:mt-0{margin-top:0px}.md\:hidden{display:none}.md\:h-screen{height:100vh}.md\:w-64{width:16rem}.md\:w-auto{width:auto}.md\:flex-1{flex:1 1 0%}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-6{grid-template-columns:repeat(6, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:p-12{padding:3rem}.md\:p-8{padding:2rem}.md\:text-6xl{font-size:3.75rem;line-height:1}.md\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 1024px){.lg\:col-span-1{grid-column:span 1 / span 1}.lg\:col-span-2{grid-column:span 2 / span 2}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}</style></head>
+<body class="islamic-bg min-h-screen transition-colors duration-500">
+
+    <div id="global-watermark" class="watermark-fixed text-white/30">
+        Created by Nur Faidatul Hasanah (Universitas Islam Syarifuddin)
+    </div>
+
+    <div id="toast">Notifikasi</div>
+
+    <div id="view-landing" class="min-h-screen flex flex-col items-center justify-center relative px-4 fade-in overflow-hidden hidden">
+        
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-emerald-900/50 to-emerald-950 pointer-events-none"></div>
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-yellow-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+
+        <div class="landing-card-custom p-8 md:p-12 rounded-3xl max-w-4xl w-full text-center relative z-20 border-t-4 border-yellow-400">
+            <div class="relative z-10">
+                <div class="flex justify-center mb-8">
+                    <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-xl border-4 border-emerald-500 z-10">
+                        <i class="fas fa-mosque text-emerald-600 text-5xl"></i>
+                    </div>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 font-arabic tracking-wide leading-tight drop-shadow-md">
+                    Asesmen Digital PAI
+                </h1>
+                
+                <div class="mb-10 px-6 py-4 bg-white/10 rounded-2xl border border-white/20 max-w-lg mx-auto backdrop-blur-sm shadow-sm transform hover:scale-105 transition-transform duration-300">
+                    <p class="text-yellow-200 text-xs md:text-sm font-medium italic leading-relaxed tracking-wide">
+                        "Aplikasi ini dirancang untuk membantu guru PAI dalam melakukan penilaian digital dan memberi ruang bagi siswa untuk melihat progress tugas dan hasil belajar secara berkelanjutan."
+                    </p>
+                </div>
+                
+                <div class="max-w-md mx-auto">
+                    <button onclick="switchView(&#39;view-info&#39;)" class="w-full bg-white text-emerald-800 font-bold text-lg py-4 rounded-xl shadow-xl hover:bg-emerald-50 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3">
+                        <span>Mulai Aplikasi</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="view-info" class="min-h-screen flex flex-col items-center justify-center p-4 relative fade-in islamic-bg">
+        <button onclick="switchView(&#39;view-landing&#39;)" class="absolute top-6 left-6 text-white/80 hover:text-white hover:bg-white/10 p-2 rounded-full transition-all z-20"><i class="fas fa-arrow-left text-xl"></i></button>
+        
+        <div class="glass-card p-8 rounded-3xl w-full max-w-4xl bg-white/95 h-[85vh] overflow-y-auto relative z-10 flex flex-col">
+            <h2 class="text-3xl font-bold text-emerald-800 font-arabic mb-6 text-center border-b pb-4 border-emerald-100">Informasi &amp; Petunjuk Penggunaan</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 flex-1">
+                <div>
+                    <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100 mb-6">
+                        <h3 class="font-bold text-emerald-900 flex items-center gap-2 mb-4"><i class="fas fa-school"></i> Identitas Sekolah</h3>
+                        <table class="text-sm text-gray-700 w-full">
+                            <tbody><tr class="border-b border-emerald-100"><td class="py-2 font-medium w-1/3">Nama Sekolah</td><td class="py-2">SMAN 1 Yosowilangun</td></tr>
+                            <tr class="border-b border-emerald-100"><td class="py-2 font-medium">Alamat</td><td class="py-2">Jl. Raya Kebonsari Yosowilangun</td></tr>
+                            <tr class="border-b border-emerald-100"><td class="py-2 font-medium align-top">Guru PAI</td><td class="py-2">1. Dr. Abdul Mu'is Joenaidi, M.Pd.I.<br>2. Sri Lestari, S.Ag.<br>3. Koyum, S.Pd.I.</td></tr>
+                            <tr><td class="py-2 font-medium">Mata Pelajaran</td><td class="py-2">Pendidikan Agama Islam (PAI)</td></tr>
+                        </tbody></table>
+                    </div>
+
+                    <div class="bg-yellow-50 p-6 rounded-2xl border border-yellow-100">
+                        <h3 class="font-bold text-yellow-900 flex items-center gap-2 mb-4"><i class="fas fa-info-circle"></i> Hal Penting</h3>
+                        <ul class="list-disc pl-5 text-sm text-gray-700 space-y-2">
+                            <li><strong>Penilaian:</strong> Meliputi Aspek Pengetahuan (P), Keterampilan (K), dan Sikap.</li>
+                            <li><strong>Sikap:</strong> Dinilai dengan predikat Sangat Baik, Baik, atau Cukup.</li>
+                            <li><strong>Kehadiran Data:</strong> Data tersimpan di browser perangkat ini. Jangan menghapus cache browser jika data belum di-backup/export.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2"><i class="fas fa-book-reader text-emerald-600"></i> Petunjuk Penggunaan</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="p-4 border rounded-xl hover:bg-gray-50 transition">
+                            <h4 class="font-bold text-emerald-700 text-sm mb-1">1. Untuk Guru</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                                - Login menggunakan Pilihan Nama dan Password (12345).<br>
+                                - Masuk menu <strong>Data Siswa</strong> untuk mengunggah daftar siswa per kelas via Excel.<br>
+                                - Gunakan menu <strong>Input Nilai Kelas</strong> untuk menilai satu kelas sekaligus.<br>
+                                - Gunakan menu <strong>Kelola Tugas</strong> untuk membagikan link Google Form/materi. Guru bisa me-export hasil pengumpulan ke Excel.<br>
+                                - Jangan lupa <strong>Backup Data</strong> secara berkala.
+                            </p>
+                        </div>
+                        <div class="p-4 border rounded-xl hover:bg-gray-50 transition">
+                            <h4 class="font-bold text-yellow-700 text-sm mb-1">2. Untuk Siswa</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                                - Pilih Kelas dan Nama Anda di halaman Login.<br>
+                                - Cek tugas di tab "Tugas Kelas". Klik tombol untuk membuka Google Form.<br>
+                                - Jika sudah selesai mengisi Form, ketik "Selesai" lalu klik Kirim Tugas.<br>
+                                - Lihat grafik capaian kompetensi dan unduh rapor jika sudah lengkap.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center pt-6 border-t border-gray-100">
+                <p class="text-xs text-gray-400 mb-4">Versi Aplikasi 2.4 • Dibuat untuk Efisiensi Pembelajaran PAI</p>
+                <button onclick="switchView(&#39;view-login-options&#39;)" class="w-full md:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-xl shadow-lg transition-all flex items-center justify-center gap-3 mx-auto transform hover:-translate-y-1">
+                    <span>Lanjut ke Halaman Login</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="view-login-options" class="min-h-screen flex flex-col items-center justify-center relative px-4 fade-in islamic-bg hidden">
+        <button onclick="switchView(&#39;view-info&#39;)" class="absolute top-6 left-6 text-white/80 hover:text-white hover:bg-white/10 p-2 rounded-full transition-all z-20"><i class="fas fa-arrow-left text-xl"></i></button>
+        
+        <div class="glass-card p-8 rounded-3xl max-w-2xl w-full text-center relative z-10">
+            <h2 class="text-3xl font-bold text-emerald-800 font-arabic mb-2">Pilih Akses Masuk</h2>
+            <p class="text-gray-500 mb-8">Silakan pilih peran Anda untuk melanjutkan.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <button onclick="switchView(&#39;view-guru-login&#39;)" class="group relative overflow-hidden bg-emerald-800 rounded-2xl p-1 transition-all hover:shadow-2xl hover:-translate-y-1">
+                    <div class="bg-emerald-50 rounded-xl p-6 h-full flex flex-col items-center justify-center relative z-10 group-hover:bg-emerald-100 transition-colors border border-emerald-200">
+                        <div class="w-16 h-16 bg-emerald-200 rounded-full flex items-center justify-center mb-4 text-emerald-800 group-hover:scale-110 transition-transform shadow-sm">
+                            <i class="fas fa-chalkboard-teacher text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-emerald-900">Guru PAI</h3>
+                        <span class="text-xs text-emerald-600 mt-1 font-medium px-3 py-1 rounded-full border border-emerald-200 bg-white/50">Masuk sebagai Pengajar</span>
+                    </div>
+                </button>
+                <button onclick="switchView(&#39;view-siswa-login&#39;)" class="group relative overflow-hidden bg-yellow-500 rounded-2xl p-1 transition-all hover:shadow-2xl hover:-translate-y-1">
+                    <div class="bg-yellow-50 rounded-xl p-6 h-full flex flex-col items-center justify-center relative z-10 group-hover:bg-yellow-100 transition-colors border border-yellow-200">
+                        <div class="w-16 h-16 bg-yellow-200 rounded-full flex items-center justify-center mb-4 text-yellow-800 group-hover:scale-110 transition-transform shadow-sm">
+                            <i class="fas fa-user-graduate text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-yellow-900">Siswa</h3>
+                        <span class="text-xs text-yellow-700 mt-1 font-medium px-3 py-1 rounded-full border border-yellow-200 bg-white/50">Masuk sebagai Peserta</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="view-guru-login" class="hidden min-h-screen flex items-center justify-center px-4 relative fade-in islamic-bg">
+        <button onclick="switchView(&#39;view-login-options&#39;)" class="absolute top-6 left-6 text-white/80 hover:text-white hover:bg-white/10 p-2 rounded-full transition-all"><i class="fas fa-arrow-left text-xl"></i></button>
+        <div class="glass-card p-8 rounded-3xl w-full max-w-md text-center border-t-4 border-emerald-400 bg-white/95">
+            <div class="w-20 h-20 bg-emerald-50 rounded-full flex items-center justify-center mx-auto mb-4 text-emerald-600 shadow-inner"><i class="fas fa-chalkboard-teacher text-3xl"></i></div>
+            <h2 class="text-2xl font-bold text-gray-800 mb-2 font-arabic">Login Guru PAI</h2>
+            <p class="text-gray-500 text-sm mb-8">Silakan pilih nama Anda untuk masuk.</p>
+            <form onsubmit="handleGuruLogin(event)">
+                <div class="space-y-4 mb-6">
+                    <div class="relative">
+                        <i class="fas fa-user absolute left-4 top-4 text-emerald-600 z-10"></i>
+                        <select id="guru-username" class="w-full p-4 pl-12 rounded-xl border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-gray-800 custom-select cursor-pointer font-medium" required="">
+                            <option value="">-- Pilih Nama Guru --</option>
+                            <option value="Abdul Mu&#39;is">Abdul Mu'is</option>
+                            <option value="Sri Lestari">Sri Lestari</option>
+                            <option value="Koyum">Koyum</option>
+                        </select>
+                    </div>
+                    <div class="relative">
+                        <i class="fas fa-lock absolute left-4 top-4 text-emerald-600 z-10"></i>
+                        <input type="password" id="guru-password" placeholder="Password" class="w-full p-4 pl-12 rounded-xl border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-gray-800" required="">
+                    </div>
+                </div>
+                <button type="submit" class="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-lg shadow-emerald-200 transition-all transform hover:-translate-y-1 cursor-pointer">Masuk Dashboard</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="view-guru" class="hidden min-h-screen flex flex-col md:flex-row bg-gray-50">
+        <button id="mobile-menu-btn" onclick="toggleSidebar()" class="fixed top-4 left-4 z-50 bg-emerald-800 text-white p-3 rounded-full shadow-lg md:hidden">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <aside id="sidebar" class="sidebar w-full md:w-64 bg-emerald-900 text-white flex-shrink-0 md:h-screen fixed md:sticky top-0 z-40 h-full overflow-y-auto no-print">
+            <div class="p-6 flex items-center gap-3 border-b border-emerald-800 mt-10 md:mt-0">
+                <div class="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center text-emerald-900 font-bold shadow-lg">NI</div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg font-arabic">Dashboard</span>
+                    <span class="text-xs text-emerald-300" id="guru-name-display">Guru PAI</span>
+                </div>
+            </div>
+            <nav class="p-4 space-y-2">
+                <a href="blob:https://05w2gcwvmefsy81r8uryk1cjv5kx1j0ccpzgiroamdyxwo1t7t-h906969431.scf.usercontent.goog/fe1375b2-6300-40cf-89e2-67b049a88b43#" onclick="switchView(&#39;view-info&#39;)" class="flex items-center gap-3 p-3 rounded-xl hover:bg-emerald-800 text-emerald-100 transition-all">
+                    <i class="fas fa-info-circle w-5 text-center"></i> Info Aplikasi
+                </a>
+                <a href="blob:https://05w2gcwvmefsy81r8uryk1cjv5kx1j0ccpzgiroamdyxwo1t7t-h906969431.scf.usercontent.goog/fe1375b2-6300-40cf-89e2-67b049a88b43#" onclick="switchView(&#39;view-guru&#39;)" class="nav-item flex items-center gap-3 p-3 rounded-xl transition-all shadow-md">
+                    <i class="fas fa-edit w-5 text-center"></i> Input Nilai Kelas
+                </a>
+                <a href="blob:https://05w2gcwvmefsy81r8uryk1cjv5kx1j0ccpzgiroamdyxwo1t7t-h906969431.scf.usercontent.goog/fe1375b2-6300-40cf-89e2-67b049a88b43#" onclick="switchView(&#39;view-kelola-tugas&#39;)" class="flex items-center gap-3 p-3 rounded-xl hover:bg-emerald-800 text-emerald-100 transition-all">
+                    <i class="fas fa-link w-5 text-center"></i> Kelola Tugas
+                </a>
+                <a href="blob:https://05w2gcwvmefsy81r8uryk1cjv5kx1j0ccpzgiroamdyxwo1t7t-h906969431.scf.usercontent.goog/fe1375b2-6300-40cf-89e2-67b049a88b43#" onclick="switchView(&#39;view-data-siswa&#39;)" class="flex items-center gap-3 p-3 rounded-xl hover:bg-emerald-800 text-emerald-100 transition-all">
+                    <i class="fas fa-users w-5 text-center"></i> Data Siswa
+                </a>
+                <a href="blob:https://05w2gcwvmefsy81r8uryk1cjv5kx1j0ccpzgiroamdyxwo1t7t-h906969431.scf.usercontent.goog/fe1375b2-6300-40cf-89e2-67b049a88b43#" onclick="printPage()" class="flex items-center gap-3 p-3 rounded-xl hover:bg-emerald-800 text-emerald-100 transition-all">
+                    <i class="fas fa-file-export w-5 text-center"></i> Export PDF (Cetak)
+                </a>
+                <a href="blob:https://05w2gcwvmefsy81r8uryk1cjv5kx1j0ccpzgiroamdyxwo1t7t-h906969431.scf.usercontent.goog/fe1375b2-6300-40cf-89e2-67b049a88b43#" onclick="switchView(&#39;view-manajemen-data&#39;)" class="flex items-center gap-3 p-3 rounded-xl hover:bg-emerald-800 text-emerald-100 transition-all">
+                    <i class="fas fa-database w-5 text-center"></i> Backup &amp; Data
+                </a>
+                <div class="pt-8 mt-4 border-t border-emerald-800">
+                    <button onclick="logout()" class="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-red-500/20 text-red-300 hover:text-red-200 transition-all">
+                        <i class="fas fa-sign-out-alt w-5 text-center"></i> Keluar
+                    </button>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="flex-1 p-4 md:p-8 overflow-y-auto w-full">
+            <header class="flex flex-col md:flex-row justify-between items-center mb-8 gap-4 no-print">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 font-arabic">Input Penilaian Kelas</h2>
+                    <p class="text-gray-500 text-sm">Semester Genap 2024/2025</p>
+                </div>
+                
+                <div class="flex items-center gap-2 bg-white p-1 rounded-xl shadow-sm border border-emerald-100">
+                    <button onclick="switchGradingMode(&#39;bulk&#39;)" id="btn-mode-bulk" class="px-4 py-2 rounded-lg text-sm font-medium transition-all bg-emerald-100 text-emerald-800">
+                        <i class="fas fa-users mr-1"></i> Satu Kelas
+                    </button>
+                </div>
+            </header>
+
+            <div class="space-y-6 print-area">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-100 no-print">
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                        <div class="w-full md:w-auto">
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">1. Pilih Kelas</label>
+                            <select id="global-kelas" onchange="handleClassChange()" class="w-full p-3 rounded-xl border border-emerald-200 bg-emerald-50 text-emerald-900 font-bold focus:ring-2 focus:ring-emerald-500 cursor-pointer custom-select shadow-sm"><option value="">-- Pilih Kelas --</option><option value="X-1">X-1</option><option value="X-2">X-2</option><option value="X-3">X-3</option><option value="X-4">X-4</option><option value="X-5">X-5</option><option value="X-6">X-6</option><option value="X-7">X-7</option><option value="X-8">X-8</option></select>
+                        </div>
+                        <div class="w-full md:flex-1">
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">2. Pilih Elemen Pembelajaran</label>
+                            <div class="grid grid-cols-2 md:grid-cols-6 gap-2" id="element-selector"><button class="p-2 rounded-lg text-xs font-bold transition-all border bg-emerald-600 text-white border-emerald-600 shadow-md">BAB 1</button><button class="p-2 rounded-lg text-xs font-bold transition-all border bg-white text-gray-600 border-gray-200 hover:bg-gray-50">BAB 2</button><button class="p-2 rounded-lg text-xs font-bold transition-all border bg-white text-gray-600 border-gray-200 hover:bg-gray-50">BAB 3</button><button class="p-2 rounded-lg text-xs font-bold transition-all border bg-white text-gray-600 border-gray-200 hover:bg-gray-50">BAB 4</button><button class="p-2 rounded-lg text-xs font-bold transition-all border bg-white text-gray-600 border-gray-200 hover:bg-gray-50">BAB 5</button><button class="p-2 rounded-lg text-xs font-bold transition-all border bg-white text-gray-600 border-gray-200 hover:bg-gray-50">BAB 6</button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="assessment-header" class="p-4 bg-blue-50 rounded-xl border border-blue-100 no-print">
+                    <div class="flex items-start gap-3">
+                        <div class="bg-blue-100 p-2 rounded-lg text-blue-600"><i class="fas fa-book-open"></i></div>
+                        <div>
+                            <h4 class="font-bold text-blue-900 text-sm">Materi Pembelajaran</h4>
+                            <div id="topic-title" class="font-medium text-blue-800 mt-1"></div>
+                            <div id="material-list-container" class="mt-2 pl-4 text-xs text-blue-700/80 border-l-2 border-blue-200"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="mode-bulk" class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-100 fade-in print-area no-print">
+                    <div class="flex justify-between items-center mb-4 border-b border-emerald-100 pb-2">
+                        <div>
+                            <h4 class="text-emerald-800 font-bold">Input Nilai Kelas <span id="bulk-class-label">X-1</span></h4>
+                            <span class="text-xs text-gray-500">Elemen: <span id="bulk-element-label" class="font-bold text-emerald-600">Al-Qur'an</span></span>
+                        </div>
+                        <button onclick="autoFillAttitude()" class="text-xs bg-amber-100 text-amber-800 px-3 py-1.5 rounded-lg hover:bg-amber-200 transition-colors font-medium border border-amber-200">
+                            <i class="fas fa-magic mr-1"></i> Isi Predikat 'Baik'
+                        </button>
+                    </div>
+                    
+                    <form id="bulk-form" onsubmit="saveBulkData(event)">
+                        <div class="overflow-x-auto max-h-[600px] border border-gray-200 rounded-lg">
+                            <table class="w-full text-sm text-left border-collapse border-spacing-0">
+                                <thead class="text-xs text-gray-700 uppercase bg-gray-50 sticky top-0 z-10 shadow-sm">
+                                    <tr>
+                                        <th class="px-4 py-3 border-b bg-gray-100 w-1/3 min-w-[200px]">Nama Siswa</th>
+                                        <th class="px-1 py-3 w-28 text-center border-b bg-gray-100">
+                                            Pengetahuan <button type="button" onclick="copyDown(&#39;b_p&#39;)" class="text-blue-600 ml-1 hover:text-blue-800" title="Copy"><i class="fas fa-arrow-down"></i></button>
+                                        </th>
+                                        <th class="px-1 py-3 w-28 text-center border-b bg-gray-100">
+                                            Keterampilan <button type="button" onclick="copyDown(&#39;b_k&#39;)" class="text-blue-600 ml-1 hover:text-blue-800" title="Copy"><i class="fas fa-arrow-down"></i></button>
+                                        </th>
+                                        <th class="px-2 py-3 w-32 border-b bg-gray-100 text-center font-bold text-emerald-800">PREDIKAT</th>
+                                        <th class="px-2 py-3 border-b bg-gray-100 min-w-[150px] font-bold text-gray-800">CATATAN</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="bulk-tbody" class="divide-y divide-gray-100 bg-white"></tbody>
+                            </table>
+                        </div>
+                        
+                        <div id="bulk-empty-msg" class="hidden py-12 text-center text-gray-400 italic">
+                            Tidak ada data siswa di kelas ini. Silakan import di menu Data Siswa.
+                        </div>
+
+                        <button type="submit" class="mt-6 w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-lg shadow-emerald-200 transition-all flex items-center justify-center gap-2 transform hover:-translate-y-1">
+                            <i class="fas fa-save"></i> Simpan Semua Nilai Kelas
+                        </button>
+                    </form>
+                </div>
+
+                <div class="print-area mt-8">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
+                        <div class="flex justify-between items-center mb-6 border-b pb-4 no-print">
+                            <h3 class="text-xl font-bold text-gray-800 flex items-center gap-2">
+                                <i class="fas fa-clipboard-list text-emerald-600"></i> Rekapitulasi <span id="rekap-class-label" class="text-emerald-700"></span>
+                            </h3>
+                            <button onclick="clearClassData()" class="text-xs text-red-500 hover:text-red-700 hover:bg-red-50 px-3 py-1 rounded border border-red-100">Hapus Data</button>
+                        </div>
+                        <div class="hidden print-block text-center mb-6"><h2 class="text-2xl font-bold text-gray-800">REKAPITULASI NILAI PAI</h2><p class="text-sm">Kelas: <span id="print-class"></span> | Elemen: <span id="print-element"></span></p></div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm text-left border-collapse border border-gray-300" id="rekap-table">
+                                <thead>
+                                    <tr class="bg-emerald-50 text-emerald-900 text-xs uppercase font-bold">
+                                        <th class="border border-gray-300 p-3 w-10 text-center">No</th>
+                                        <th class="border border-gray-300 p-3 w-1/4">Nama Siswa</th>
+                                        <th class="border border-gray-300 p-3 w-16 text-center bg-emerald-100">Nilai</th>
+                                        <th class="border border-gray-300 p-3 w-20 text-center">Predikat</th>
+                                        <th class="border border-gray-300 p-3 w-24 text-center">Sikap</th>
+                                        <th class="border border-gray-300 p-3">Deskripsi Capaian</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="rekap-tbody" class="divide-y divide-gray-200"></tbody>
+                            </table>
+                        </div>
+                        <div class="hidden print-block mt-12 flex justify-end px-10"><div class="text-center"><p>Guru Mata Pelajaran</p><br><br><br><p class="font-bold underline">( ........................................ )</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="view-kelola-tugas" class="hidden min-h-screen flex flex-col md:flex-row bg-gray-50">
+        <aside class="w-full md:w-64 bg-emerald-900 text-white flex-shrink-0 md:h-screen sticky top-0 z-50">
+            <div class="p-6 flex items-center gap-3 border-b border-emerald-800"><div class="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center text-emerald-900 font-bold shadow-lg">NI</div><span class="font-bold text-lg font-arabic">Dashboard Guru</span></div>
+            <nav class="p-4 space-y-2">
+                 <a href="blob:https://05w2gcwvmefsy81r8uryk1cjv5kx1j0ccpzgiroamdyxwo1t7t-h906969431.scf.usercontent.goog/fe1375b2-6300-40cf-89e2-67b049a88b43#" onclick="switchView(&#39;view-guru&#39;)" class="flex items-center gap-3 p-3 rounded-xl hover:bg-emerald-800 text-emerald-100 transition-all"><i class="fas fa-edit w-5 text-center"></i> Input Nilai</a>
+                 <a href="blob:https://05w2gcwvmefsy81r8uryk1cjv5kx1j0ccpzgiroamdyxwo1t7t-h906969431.scf.usercontent.goog/fe1375b2-6300-40cf-89e2-67b049a88b43#" onclick="switchView(&#39;view-kelola-tugas&#39;)" class="nav-item flex items-center gap-3 p-3 rounded-xl transition-all shadow-md"><i class="fas fa-link w-5 text-center"></i> Kelola Tugas</a>
+                 <a href="blob:https://05w2gcwvmefsy81r8uryk1cjv5kx1j0ccpzgiroamdyxwo1t7t-h906969431.scf.usercontent.goog/fe1375b2-6300-40cf-89e2-67b049a88b43#" onclick="switchView(&#39;view-data-siswa&#39;)" class="flex items-center gap-3 p-3 rounded-xl hover:bg-emerald-800 text-emerald-100 transition-all"><i class="fas fa-users w-5 text-center"></i> Data Siswa</a>
+                 <a href="blob:https://05w2gcwvmefsy81r8uryk1cjv5kx1j0ccpzgiroamdyxwo1t7t-h906969431.scf.usercontent.goog/fe1375b2-6300-40cf-89e2-67b049a88b43#" onclick="switchView(&#39;view-landing&#39;)" class="flex items-center gap-3 p-3 rounded-xl hover:bg-emerald-800 text-emerald-100 transition-all"><i class="fas fa-home w-5 text-center"></i> Home</a>
+            </nav>
+        </aside>
+
+        <main class="flex-1 p-4 md:p-8 overflow-y-auto w-full">
+            <header class="flex justify-between items-center mb-8">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 font-arabic">Kelola Tugas &amp; Materi</h2>
+                    <p class="text-gray-500 text-sm">Bagikan materi atau form tugas untuk siswa</p>
+                </div>
+            </header>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div class="lg:col-span-1">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-100 sticky top-4">
+                        <h3 class="font-bold text-emerald-800 mb-4 border-b pb-2">Buat Tugas Baru</h3>
+                        <form onsubmit="handleSaveTask(event)">
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-500 mb-1">Judul Tugas/Materi</label>
+                                    <input type="text" id="task-title" class="w-full p-3 rounded-xl border bg-gray-50 focus:ring-2 focus:ring-emerald-500 outline-none" placeholder="Cth: Ulangan Harian BAB 1" required="">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-500 mb-1">Deskripsi Tugas</label>
+                                    <textarea id="task-desc" rows="3" class="w-full p-3 rounded-xl border bg-gray-50 focus:ring-2 focus:ring-emerald-500 outline-none" placeholder="Cth: Silakan kerjakan tugas di link Google Form di bawah ini." required=""></textarea>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-500 mb-1">Link Tugas (Google Form/Drive dll)</label>
+                                    <input type="url" id="task-link" class="w-full p-3 rounded-xl border bg-gray-50 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="https://forms.gle/..." required="">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-500 mb-1">Untuk Kelas</label>
+                                    <select id="task-class" class="w-full p-3 rounded-xl border bg-gray-50 outline-none custom-select"><option value="X-1">X-1</option><option value="X-2">X-2</option><option value="X-3">X-3</option><option value="X-4">X-4</option><option value="X-5">X-5</option><option value="X-6">X-6</option><option value="X-7">X-7</option><option value="X-8">X-8</option></select>
+                                </div>
+                                <button type="submit" class="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-lg transition-all">
+                                    <i class="fas fa-paper-plane mr-2"></i> Kirim Tugas
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-100">
+                        <h3 class="font-bold text-gray-800 mb-4">Daftar Tugas Aktif</h3>
+                        <div id="task-list-container" class="space-y-3">
+                            <p class="text-gray-400 text-center italic py-8">Belum ada tugas yang dibuat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal-pengumpulan" class="hidden fixed inset-0 bg-black/50 z-[100] flex items-center justify-center p-4 fade-in">
+                <div class="bg-white rounded-2xl p-6 w-full max-w-3xl max-h-[80vh] flex flex-col">
+                    <div id="modal-pengumpulan-header" class="flex justify-between items-center mb-4">
+                        </div>
+                    <div class="overflow-y-auto flex-1 border rounded-lg">
+                        <table class="w-full text-sm text-left">
+                            <thead class="bg-gray-50 sticky top-0 shadow-sm text-xs uppercase text-gray-600">
+                                <tr>
+                                    <th class="p-3 border-b">Nama Siswa</th>
+                                    <th class="p-3 border-b">Kelas</th>
+                                    <th class="p-3 border-b">Waktu Pengumpulan</th>
+                                    <th class="p-3 border-b text-center">Bukti / Keterangan</th>
+                                </tr>
+                            </thead>
+                            <tbody id="pengumpulan-tbody" class="divide-y divide-gray-100">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <div id="view-data-siswa" class="hidden min-h-screen flex flex-col md:flex-row bg-gray-50">
+        <aside class="w-full md:w-64 bg-emerald-900 text-white flex-shrink-0 md:h-screen sticky top-0 z-50">
+             <div class="p-6 flex items-center gap-3 border-b border-emerald-800"><div class="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center text-emerald-900 font-bold shadow-lg">NI</div><span class="font-bold text-lg font-arabic">Dashboard Guru</span></div>
+            <nav class="p-4 space-y-2">
+                 <a href="blob:https://05w2gcwvmefsy81r8uryk1cjv5kx1j0ccpzgiroamdyxwo1t7t-h906969431.scf.usercontent.goog/fe1375b2-6300-40cf-89e2-67b049a88b43#" onclick="switchView(&#39;view-guru&#39;)" class="flex items-center gap-3 p-3 rounded-xl hover:bg-emerald-800 text-emerald-100 transition-all"><i class="fas fa-edit w-5 text-center"></i> Input Nilai</a>
+                 <a href="blob:https://05w2gcwvmefsy81r8uryk1cjv5kx1j0ccpzgiroamdyxwo1t7t-h906969431.scf.usercontent.goog/fe1375b2-6300-40cf-89e2-67b049a88b43#" onclick="switchView(&#39;view-data-siswa&#39;)" class="bg-emerald-800 text-white flex items-center gap-3 p-3 rounded-xl transition-all shadow-md"><i class="fas fa-users w-5 text-center"></i> Data Siswa</a>
+                 <a href="blob:https://05w2gcwvmefsy81r8uryk1cjv5kx1j0ccpzgiroamdyxwo1t7t-h906969431.scf.usercontent.goog/fe1375b2-6300-40cf-89e2-67b049a88b43#" onclick="switchView(&#39;view-manajemen-data&#39;)" class="flex items-center gap-3 p-3 rounded-xl hover:bg-emerald-800 text-emerald-100 transition-all"><i class="fas fa-database w-5 text-center"></i> Backup &amp; Data</a>
+            </nav>
+        </aside>
+        
+        <main class="flex-1 p-4 md:p-8 w-full">
+            <header class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 font-arabic">Manajemen Data Siswa</h2>
+                <p class="text-gray-500 text-sm">Kelola data siswa: input manual atau upload Excel.</p>
+            </header>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-100 h-fit">
+                    <h3 class="font-bold text-emerald-800 mb-4 border-b pb-2 flex items-center gap-2">
+                        <i class="fas fa-user-plus"></i> Tambah Siswa Manual
+                    </h3>
+                    <form onsubmit="handleAddStudent(event)">
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 mb-1">Kelas</label>
+                                <select id="manual-student-class" class="w-full p-3 rounded-xl border bg-gray-50 outline-none custom-select" required=""><option value="X-1">X-1</option><option value="X-2">X-2</option><option value="X-3">X-3</option><option value="X-4">X-4</option><option value="X-5">X-5</option><option value="X-6">X-6</option><option value="X-7">X-7</option><option value="X-8">X-8</option></select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 mb-1">Nama Lengkap</label>
+                                <input type="text" id="manual-student-name" class="w-full p-3 rounded-xl border bg-gray-50 outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Contoh: Ahmad Dahlan" required="">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 mb-1">NIS (Opsional)</label>
+                                <input type="text" id="manual-student-nis" class="w-full p-3 rounded-xl border bg-gray-50 outline-none focus:ring-2 focus:ring-emerald-500" placeholder="12345">
+                            </div>
+                            <button type="submit" class="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-lg transition-all flex items-center justify-center gap-2">
+                                <i class="fas fa-plus-circle"></i> Simpan Siswa
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-100 h-fit text-center flex flex-col justify-center items-center">
+                    <div class="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center mb-4 text-green-600">
+                        <i class="fas fa-file-excel text-3xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Import Excel (.xlsx)</h3>
+                    <p class="text-xs text-gray-500 mb-6 max-w-xs">
+                        Gunakan file Excel dengan kolom: <strong>No, Nama, NIS, Kelas</strong> untuk upload banyak data sekaligus.
+                    </p>
+                    
+                    <label class="relative cursor-pointer bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition-all w-full md:w-auto">
+                        <span class="flex items-center justify-center gap-2"><i class="fas fa-upload"></i> Pilih File</span>
+                        <input type="file" id="excel-file" class="hidden" accept=".xlsx, .xls" onchange="handleExcelUpload(event)">
+                    </label>
+                    <div id="upload-status" class="mt-4 text-xs text-green-600 hidden"></div>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <div class="flex justify-between items-center mb-4 px-2">
+                    <h3 class="font-bold text-gray-800">Daftar Siswa Tersimpan</h3>
+                    <button onclick="if(confirm(&#39;Hapus semua data siswa?&#39;)) { dbSiswa=[]; saveData(); renderStudentPreview(); }" class="text-xs text-red-500 hover:underline">Hapus Semua</button>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                    <div class="max-h-[400px] overflow-y-auto">
+                        <table class="w-full text-sm text-left">
+                            <thead class="bg-gray-50 text-gray-700 uppercase text-xs sticky top-0 z-10">
+                                <tr>
+                                    <th class="px-6 py-3 w-10">No</th>
+                                    <th class="px-6 py-3">Nama</th>
+                                    <th class="px-6 py-3">Kelas</th>
+                                    <th class="px-6 py-3">NIS</th>
+                                    <th class="px-6 py-3 text-center">Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody id="student-preview-body" class="divide-y divide-gray-100"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="view-manajemen-data" class="hidden min-h-screen flex flex-col md:flex-row bg-gray-50">
+        <aside class="w-full md:w-64 bg-emerald-900 text-white flex-shrink-0 md:h-screen sticky top-0 z-50">
+             <div class="p-6 flex items-center gap-3 border-b border-emerald-800"><div class="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center text-emerald-900 font-bold shadow-lg">NI</div><span class="font-bold text-lg font-arabic">Dashboard Guru</span></div>
+            <nav class="p-4 space-y-2">
+                 <a href="blob:https://05w2gcwvmefsy81r8uryk1cjv5kx1j0ccpzgiroamdyxwo1t7t-h906969431.scf.usercontent.goog/fe1375b2-6300-40cf-89e2-67b049a88b43#" onclick="switchView(&#39;view-guru&#39;)" class="flex items-center gap-3 p-3 rounded-xl hover:bg-emerald-800 text-emerald-100 transition-all"><i class="fas fa-edit w-5 text-center"></i> Input Nilai</a>
+                 <a href="blob:https://05w2gcwvmefsy81r8uryk1cjv5kx1j0ccpzgiroamdyxwo1t7t-h906969431.scf.usercontent.goog/fe1375b2-6300-40cf-89e2-67b049a88b43#" onclick="switchView(&#39;view-manajemen-data&#39;)" class="bg-emerald-800 text-white flex items-center gap-3 p-3 rounded-xl transition-all shadow-md"><i class="fas fa-database w-5 text-center"></i> Backup &amp; Data</a>
+            </nav>
+        </aside>
+        
+        <main class="flex-1 p-4 md:p-8 w-full flex items-center justify-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl w-full">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-emerald-100 text-center hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600"><i class="fas fa-download text-2xl"></i></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Backup Data (Export)</h3>
+                    <p class="text-sm text-gray-500 mb-6">Unduh seluruh data nilai, siswa, dan tugas dalam format JSON untuk cadangan.</p>
+                    <button onclick="downloadBackup()" class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-colors">Download JSON</button>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-emerald-100 text-center hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-amber-50 rounded-full flex items-center justify-center mx-auto mb-4 text-amber-600"><i class="fas fa-upload text-2xl"></i></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Restore Data (Import)</h3>
+                    <p class="text-sm text-gray-500 mb-6">Pulihkan data dari file JSON cadangan yang pernah Anda unduh sebelumnya.</p>
+                    <label class="block w-full cursor-pointer py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl transition-colors">
+                        <span>Pilih File JSON</span>
+                        <input type="file" class="hidden" accept=".json" onchange="restoreBackup(event)">
+                    </label>
+                </div>
+                
+                <div class="md:col-span-2 text-center">
+                    <button onclick="hardReset()" class="text-red-500 hover:text-red-700 text-sm underline">Reset/Hapus Semua Data Aplikasi (Bahaya)</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="view-siswa-login" class="min-h-screen flex items-center justify-center px-4 relative fade-in islamic-bg hidden">
+        <button onclick="switchView(&#39;view-login-options&#39;)" class="absolute top-6 left-6 text-white/80 hover:text-white hover:bg-white/10 p-2 rounded-full transition-all"><i class="fas fa-arrow-left text-xl"></i></button>
+        <div class="glass-card p-8 rounded-3xl w-full max-w-md border-t-4 border-yellow-400">
+            <div class="w-20 h-20 bg-yellow-50 rounded-full flex items-center justify-center mx-auto mb-4 text-yellow-600 shadow-inner"><i class="fas fa-user-graduate text-3xl"></i></div>
+            <h2 class="text-2xl font-bold text-gray-800 mb-2 font-arabic text-center">Login Siswa</h2>
+            <p class="text-gray-500 text-sm mb-8 text-center">Pilih kelas dan nama untuk melihat nilai.</p>
+            
+            <form onsubmit="handleSiswaLogin(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-1">Pilih Kelas</label>
+                    <select id="login-siswa-kelas" onchange="populateSiswaNameSelect()" class="w-full p-4 rounded-xl border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-yellow-500 custom-select cursor-pointer" required=""><option value="">-- Pilih Kelas --</option><option value="X-1">X-1</option><option value="X-2">X-2</option><option value="X-3">X-3</option><option value="X-4">X-4</option><option value="X-5">X-5</option><option value="X-6">X-6</option><option value="X-7">X-7</option><option value="X-8">X-8</option></select>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-1">Pilih Nama</label>
+                    <select id="login-siswa-nama" class="w-full p-4 rounded-xl border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-yellow-500 custom-select cursor-pointer disabled:bg-gray-100" required=""><option value="">-- Pilih Nama --</option><option value="ABI MANYU UMAR BENZEMA">ABI MANYU UMAR BENZEMA</option><option value="ADRIAN HARTANTO">ADRIAN HARTANTO</option><option value="AI ROSA">AI ROSA</option><option value="ALVINO DWI OKTAVIAN">ALVINO DWI OKTAVIAN</option><option value="AMELIA AZKA HAFIZHAH">AMELIA AZKA HAFIZHAH</option><option value="AURELIA PASYA ENJELICA">AURELIA PASYA ENJELICA</option><option value="AVIANA FARAH HAMIDAH">AVIANA FARAH HAMIDAH</option><option value="AZURA SINAR LARINDA">AZURA SINAR LARINDA</option><option value="DISCA MAURA MEILANY SAPUTRI">DISCA MAURA MEILANY SAPUTRI</option><option value="DWI RAHMAWATI">DWI RAHMAWATI</option><option value="ELLADORA CHOERLYA AURORA">ELLADORA CHOERLYA AURORA</option><option value="FIOLITA AULIA PUTRI EFINDA">FIOLITA AULIA PUTRI EFINDA</option><option value="FRIDA NAYLA IZA HARTONO">FRIDA NAYLA IZA HARTONO</option><option value="GIEN ARUM SETYORINI">GIEN ARUM SETYORINI</option><option value="LAILY BAROKATUL MAGFIROH">LAILY BAROKATUL MAGFIROH</option><option value="MAULA DAFFA IHSANI">MAULA DAFFA IHSANI</option><option value="MEI WULANDARI">MEI WULANDARI</option><option value="MUHAMMAD JUANDA FIRMANSYAH">MUHAMMAD JUANDA FIRMANSYAH</option><option value="MUHAMMAD REYZA GHANY FIRMANDA">MUHAMMAD REYZA GHANY FIRMANDA</option><option value="NADIF ASWA RAM ALI VAD AQ">NADIF ASWA RAM ALI VAD AQ</option><option value="NADYA SOFWAH RAMADHANI">NADYA SOFWAH RAMADHANI</option><option value="NAYLATUS SAIDAH">NAYLATUS SAIDAH</option><option value="NUR AZIZAH ALIYAH">NUR AZIZAH ALIYAH</option><option value="PUTRI AGUSTINA ALDANISYAH">PUTRI AGUSTINA ALDANISYAH</option><option value="RAMA SAPUTRA ADITIA">RAMA SAPUTRA ADITIA</option><option value="RANI SHAFIRA LIMARTA">RANI SHAFIRA LIMARTA</option><option value="RIKA AYU NOVITASARI">RIKA AYU NOVITASARI</option><option value="SAFA AULIA">SAFA AULIA</option><option value="SEPTI VICI AHIRA">SEPTI VICI AHIRA</option><option value="SHARAVI MAGHFUR ROMADLON">SHARAVI MAGHFUR ROMADLON</option><option value="SILFI NOVIYANASARI">SILFI NOVIYANASARI</option><option value="SITI NURHALISA">SITI NURHALISA</option><option value="SRI MULYANI">SRI MULYANI</option><option value="VALENTINO ROSI ABDILLAH">VALENTINO ROSI ABDILLAH</option><option value="WILDHAN JANUAR PRATAMA">WILDHAN JANUAR PRATAMA</option><option value="YOSINANDA AUFIN NURIL HUBBI">YOSINANDA AUFIN NURIL HUBBI</option></select>
+                </div>
+                <button type="submit" class="w-full py-3 bg-yellow-500 hover:bg-yellow-600 text-white font-bold rounded-xl shadow-lg shadow-yellow-200 transition-all transform hover:-translate-y-1 mt-4">Lihat Raporku</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="view-siswa-dashboard" class="hidden min-h-screen bg-gray-50">
+        <header class="bg-emerald-800 text-white p-6 pb-24 rounded-b-[3rem] shadow-xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full -mr-20 -mt-20"></div>
+            <div class="max-w-4xl mx-auto relative z-10">
+                <div class="flex justify-between items-start">
+                    <button onclick="logout()" class="bg-white/20 hover:bg-white/30 p-2 rounded-lg backdrop-blur-sm transition text-sm"><i class="fas fa-arrow-left"></i> Keluar</button>
+                    <div class="text-right">
+                        <h1 class="text-2xl font-bold font-arabic">Assalamu'alaikum</h1>
+                        <p id="student-dash-name" class="text-yellow-300 font-medium text-lg"></p>
+                        <p id="student-dash-class" class="text-emerald-200 text-sm"></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="max-w-4xl mx-auto px-4 -mt-16 pb-12 relative z-20 space-y-6">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center text-center">
+                    <span class="text-gray-400 text-xs uppercase font-bold tracking-wider">Rata-Rata</span>
+                    <span id="student-avg-score" class="text-3xl font-bold text-emerald-600 my-1">-</span>
+                    <span class="text-xs text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">Nilai Gabungan</span>
+                </div>
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center text-center">
+                    <span class="text-gray-400 text-xs uppercase font-bold tracking-wider">Predikat</span>
+                    <span id="student-predicate" class="text-3xl font-bold text-yellow-500 my-1">-</span>
+                    <span class="text-xs text-yellow-600 bg-yellow-50 px-2 py-0.5 rounded-full">Sikap Umum</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100">
+                <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2"><i class="fas fa-chart-pie text-emerald-500"></i> Grafik Kompetensi</h3>
+                <div class="h-64 relative">
+                    <canvas id="studentChart"></canvas>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100">
+                <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2">
+                    <i class="fas fa-clipboard-check text-blue-500"></i> Tugas Kelas
+                </h3>
+                <div id="student-task-list" class="space-y-3">
+                    <p class="text-center text-gray-400 text-sm py-4">Tidak ada tugas aktif.</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="font-bold text-gray-800 flex items-center gap-2"><i class="fas fa-list-alt text-purple-500"></i> Rapor Detail</h3>
+                    <button onclick="window.print()" class="text-xs bg-gray-100 hover:bg-gray-200 px-3 py-1.5 rounded-lg transition"><i class="fas fa-print"></i> Cetak</button>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left">
+                        <thead class="bg-gray-50 text-gray-600 text-xs uppercase">
+                            <tr>
+                                <th class="p-3 rounded-l-lg">Elemen</th>
+                                <th class="p-3 text-center">Pengetahuan</th>
+                                <th class="p-3 text-center">Keterampilan</th>
+                                <th class="p-3 text-right rounded-r-lg">Ket.</th>
+                            </tr>
+                        </thead>
+                        <tbody id="student-rapor-body" class="divide-y divide-gray-50"></tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // --- KONFIGURASI & VARIABEL GLOBAL ---
+        const CLASS_LIST = ['X-1', 'X-2', 'X-3', 'X-4', 'X-5', 'X-6', 'X-7', 'X-8'];
+        const ELEMENTS = [
+            { id: 'quran', name: "BAB 1", desc: "Al-Qur'an: Membaca & Menghafal" },
+            { id: 'hadis', name: "BAB 2", desc: "Hadis: Analisis Hadis Nabi" },
+            { id: 'aqidah', name: "BAB 3", desc: "Aqidah: Keimanan & Tauhid" },
+            { id: 'akhlak', name: "BAB 4", desc: "Akhlak: Perilaku Terpuji" },
+            { id: 'fiqih', name: "BAB 5", desc: "Fiqih: Hukum Islam & Ibadah" },
+            { id: 'spi', name: "BAB 6", desc: "SPI: Sejarah Peradaban Islam" }
+        ];
+
+        // INITIAL DATA FROM EXCEL
+        const INITIAL_STUDENTS = [
+            { nama: "ACHMAD GEISHA DWI WILDAN", kelas: "X-1", nis: "-" },
+            { nama: "AGIL AZHAR AMIN", kelas: "X-1", nis: "-" },
+            { nama: "ALFI FITRIATUL LAILA", kelas: "X-1", nis: "-" },
+            { nama: "AUREL EKA WULANDARI", kelas: "X-1", nis: "-" },
+            { nama: "CAHYADI SUDRAJAT", kelas: "X-1", nis: "-" },
+            { nama: "CRESENSIA HANA PURI NARESWARI", kelas: "X-1", nis: "-" },
+            { nama: "DINDA NURLAILY", kelas: "X-1", nis: "-" },
+            { nama: "DIVO OKA SAPUTRA", kelas: "X-1", nis: "-" },
+            { nama: "ELYSIA PUTRI NAILAH", kelas: "X-1", nis: "-" },
+            { nama: "EVAN PUTRA CHRISTIAN", kelas: "X-1", nis: "-" },
+            { nama: "FLORENSIA YUANITA WIBISONO", kelas: "X-1", nis: "-" },
+            { nama: "GABRIELLA NOVELINDA YORDANI", kelas: "X-1", nis: "-" },
+            { nama: "GALANTIO PUTRA BERLIAN", kelas: "X-1", nis: "-" },
+            { nama: "GLADIS HAWA AISWARA", kelas: "X-1", nis: "-" },
+            { nama: "HAFIZA NUR MAULIDIA", kelas: "X-1", nis: "-" },
+            { nama: "JEANNE MARSIANA SABU BEOANG", kelas: "X-1", nis: "-" },
+            { nama: "JESICA KAROLINA", kelas: "X-1", nis: "-" },
+            { nama: "JOSHEFIN MARGARETHA ELVIRA", kelas: "X-1", nis: "-" },
+            { nama: "KEYLA HARZA PUTRI", kelas: "X-1", nis: "-" },
+            { nama: "KUKOH JANUR WIDHI ANSYAH", kelas: "X-1", nis: "-" },
+            { nama: "MAKARINA PATI KELEN", kelas: "X-1", nis: "-" },
+            { nama: "MANDA CHERRY KUMARA", kelas: "X-1", nis: "-" },
+            { nama: "MERLYANA FRANSISKUS", kelas: "X-1", nis: "-" },
+            { nama: "MOCHAMAD NOVRIL MAULANA SAPUTRA", kelas: "X-1", nis: "-" },
+            { nama: "MOCHAMMAD FRISKO CAHYONO", kelas: "X-1", nis: "-" },
+            { nama: "MUHAMAD IZAL MAULUDIN", kelas: "X-1", nis: "-" },
+            { nama: "NADIFA DZAKIRA AFTANI", kelas: "X-1", nis: "-" },
+            { nama: "NANDA ERWIN YUDHA HERNANDO", kelas: "X-1", nis: "-" },
+            { nama: "NASYA FAJAR RANI", kelas: "X-1", nis: "-" },
+            { nama: "NIMAS AYU CAROLIEN SELAN", kelas: "X-1", nis: "-" },
+            { nama: "QIESHA ALMIRA PUTRI", kelas: "X-1", nis: "-" },
+            { nama: "ROIFAH", kelas: "X-1", nis: "-" },
+            { nama: "SELFIA AULINA FATMAWATI", kelas: "X-1", nis: "-" },
+            { nama: "YASHINTA PUTRI YUVI DESTYANNANDA", kelas: "X-1", nis: "-" },
+            { nama: "YOSIA ABIB DRINKSANI EKANATA", kelas: "X-1", nis: "-" },
+            { nama: "ZEVANA TESSALONIKA KAMILA WARDHANI", kelas: "X-1", nis: "-" },
+            { nama: "ADELIA IKA JUNI HAMDANI", kelas: "X-2", nis: "-" },
+            { nama: "AINUN SAFIRUDIN", kelas: "X-2", nis: "-" },
+            { nama: "ALEN FEBYAN SYAHPUTRA", kelas: "X-2", nis: "-" },
+            { nama: "ALVINO ARZAQI SUWANDI", kelas: "X-2", nis: "-" },
+            { nama: "ANITA MARIS SUSTIKA", kelas: "X-2", nis: "-" },
+            { nama: "ARYA JURJIS LABIB", kelas: "X-2", nis: "-" },
+            { nama: "AURA QUINSHA AZZAHRA", kelas: "X-2", nis: "-" },
+            { nama: "AUREL AURA DARA", kelas: "X-2", nis: "-" },
+            { nama: "AYU DEWI WULANDARI", kelas: "X-2", nis: "-" },
+            { nama: "BHISMA BIMANTARA", kelas: "X-2", nis: "-" },
+            { nama: "CHELO NUR BAGAS WORO PUTRO", kelas: "X-2", nis: "-" },
+            { nama: "CUCUN ATIKA JAUHARO", kelas: "X-2", nis: "-" },
+            { nama: "DELVINE MAYLIA INTAN", kelas: "X-2", nis: "-" },
+            { nama: "DESVITA APSARI WIJAYA", kelas: "X-2", nis: "-" },
+            { nama: "DEWI AYU PUTRI RAMADANI", kelas: "X-2", nis: "-" },
+            { nama: "DITA MAYSAROH", kelas: "X-2", nis: "-" },
+            { nama: "EKA SHOLEHA DEWI NOVITASARI", kelas: "X-2", nis: "-" },
+            { nama: "FANISA AULIA PUTRI", kelas: "X-2", nis: "-" },
+            { nama: "FERLINGGA ATASYA ROKHMAN", kelas: "X-2", nis: "-" },
+            { nama: "FIONA NURIL YUNINGTIAS", kelas: "X-2", nis: "-" },
+            { nama: "FITRI AR RAHMAH", kelas: "X-2", nis: "-" },
+            { nama: "GALIZA EFRITA WULANDARI", kelas: "X-2", nis: "-" },
+            { nama: "GEA REVANY ADISTYA", kelas: "X-2", nis: "-" },
+            { nama: "KHANSAA FAUZIAH FAWWAZ", kelas: "X-2", nis: "-" },
+            { nama: "MOH SUBHAN HIDAYAT", kelas: "X-2", nis: "-" },
+            { nama: "MOHAMMAD LIONEL MESSI RAMADHAN", kelas: "X-2", nis: "-" },
+            { nama: "MUH HONEY QIAMU LAIL", kelas: "X-2", nis: "-" },
+            { nama: "NANDA WARDATUL MILA YANTI", kelas: "X-2", nis: "-" },
+            { nama: "RAHMAT TSANI AKBAR", kelas: "X-2", nis: "-" },
+            { nama: "RIZQI DESTA LOVASKO", kelas: "X-2", nis: "-" },
+            { nama: "SESILIA EKA RAMADHANI", kelas: "X-2", nis: "-" },
+            { nama: "SINTA DWI SETIAWATI", kelas: "X-2", nis: "-" },
+            { nama: "VYRRA RAHMADHANI", kelas: "X-2", nis: "-" },
+            { nama: "WIDIYA PUTRI PUJA SAFIRA", kelas: "X-2", nis: "-" },
+            { nama: "ZIDNI ILMA AKBAR", kelas: "X-2", nis: "-" },
+            { nama: "ZIVANA PUTRI ANGGREINI", kelas: "X-2", nis: "-" },
+            { nama: "ABDUL QODIR JAELANI", kelas: "X-3", nis: "-" },
+            { nama: "ADELA SALSABILA", kelas: "X-3", nis: "-" },
+            { nama: "AIRA DWI RAMADHANI", kelas: "X-3", nis: "-" },
+            { nama: "AISAHTUL JANNAH", kelas: "X-3", nis: "-" },
+            { nama: "ANANDA AISYAH PUTRI", kelas: "X-3", nis: "-" },
+            { nama: "ANWAR IBRAHIM", kelas: "X-3", nis: "-" },
+            { nama: "ARIAL SISWOYO", kelas: "X-3", nis: "-" },
+            { nama: "CIKA DWI PATTRICIA", kelas: "X-3", nis: "-" },
+            { nama: "DINAH FILZAH SYAFIQAH", kelas: "X-3", nis: "-" },
+            { nama: "DYO MIRSA IRAWAN", kelas: "X-3", nis: "-" },
+            { nama: "EGHI DWI MAULANA", kelas: "X-3", nis: "-" },
+            { nama: "ELSA REGINA PUTRI", kelas: "X-3", nis: "-" },
+            { nama: "FAREL GHATAN IRAWAN", kelas: "X-3", nis: "-" },
+            { nama: "FARRAS QIANDRA ALKAVANU", kelas: "X-3", nis: "-" },
+            { nama: "FITRI HALIMATUS ZAHRO", kelas: "X-3", nis: "-" },
+            { nama: "FRISKA WAHYUNING LESTARI", kelas: "X-3", nis: "-" },
+            { nama: "MERLINDA NATACHA EKA PUTRI", kelas: "X-3", nis: "-" },
+            { nama: "MIFTAKHUL JANAH", kelas: "X-3", nis: "-" },
+            { nama: "MUAN FEBRIHASAN", kelas: "X-3", nis: "-" },
+            { nama: "MUHAMAD ILHAM ALFARIZI", kelas: "X-3", nis: "-" },
+            { nama: "MUHAMMAD ADITYA PRATAMA", kelas: "X-3", nis: "-" },
+            { nama: "MUHAMMAD DAVID ANDREAN", kelas: "X-3", nis: "-" },
+            { nama: "NANIK DWI LESTARI", kelas: "X-3", nis: "-" },
+            { nama: "NAYLA IZZATI AULIA", kelas: "X-3", nis: "-" },
+            { nama: "NINDY FEBRIANI MAULIDIA", kelas: "X-3", nis: "-" },
+            { nama: "OKTAVIYANI TRI UTAMI", kelas: "X-3", nis: "-" },
+            { nama: "OKTAVIYANTI DWI UTAMI", kelas: "X-3", nis: "-" },
+            { nama: "PUTRI DEWI ASURA ADI CHANDRA", kelas: "X-3", nis: "-" },
+            { nama: "RASYA ADITYA DHARMA PUTRA", kelas: "X-3", nis: "-" },
+            { nama: "RISMA AMANDA", kelas: "X-3", nis: "-" },
+            { nama: "SOFIA MEI SURYANI", kelas: "X-3", nis: "-" },
+            { nama: "VIKO BALKIS FEBRIANA KALIMANTARI", kelas: "X-3", nis: "-" },
+            { nama: "WILDA DWI SURYANI", kelas: "X-3", nis: "-" },
+            { nama: "YASMINE ADDINA ZAIN", kelas: "X-3", nis: "-" },
+            { nama: "YUNITA VIRGINIA", kelas: "X-3", nis: "-" },
+            { nama: "ZILVANY DIA RIZKI AZZAHRAH", kelas: "X-3", nis: "-" },
+            { nama: "ADELIA RACHEL MEYSIA FIRSTI", kelas: "X-4", nis: "-" },
+            { nama: "ADINDA NASYA AULIA", kelas: "X-4", nis: "-" },
+            { nama: "AIRA NUR RAHMAH", kelas: "X-4", nis: "-" },
+            { nama: "AKHMAD FATONI", kelas: "X-4", nis: "-" },
+            { nama: "ALFIA DEWI NAFIAH", kelas: "X-4", nis: "-" },
+            { nama: "ANANDA ARIL PUTRA PRATAMA", kelas: "X-4", nis: "-" },
+            { nama: "ANFIL JENNATUL FAHIRO", kelas: "X-4", nis: "-" },
+            { nama: "ARSIKHA MEELA OKTAVIA", kelas: "X-4", nis: "-" },
+            { nama: "AURA ANGGELLITA ALIANSA", kelas: "X-4", nis: "-" },
+            { nama: "CHIKA RAMADHANI", kelas: "X-4", nis: "-" },
+            { nama: "ELFREDA NAJAH SASHA POESUCHA", kelas: "X-4", nis: "-" },
+            { nama: "FAREL RAFKA ARDIANSYAH", kelas: "X-4", nis: "-" },
+            { nama: "FERDYAN TRI PRASETYO", kelas: "X-4", nis: "-" },
+            { nama: "FITRIA NUR SEPTIYASA", kelas: "X-4", nis: "-" },
+            { nama: "GALANG RIDHO ANGGORO", kelas: "X-4", nis: "-" },
+            { nama: "GALO PURWADI ANSAH", kelas: "X-4", nis: "-" },
+            { nama: "LIFI NUR AINI", kelas: "X-4", nis: "-" },
+            { nama: "MAULANA AKBAR", kelas: "X-4", nis: "-" },
+            { nama: "MAYZAHRO CAHYA KARTIKA PUTRI", kelas: "X-4", nis: "-" },
+            { nama: "MOHAMAD PUTRA GHOFIN", kelas: "X-4", nis: "-" },
+            { nama: "MOHAMMAD ROQIB ALI BASHOR", kelas: "X-4", nis: "-" },
+            { nama: "MONICA PUTRI ANASTASYA", kelas: "X-4", nis: "-" },
+            { nama: "MUHAMMAD AFIF", kelas: "X-4", nis: "-" },
+            { nama: "NADZWA AUREL NUR NAZILLAH", kelas: "X-4", nis: "-" },
+            { nama: "NOVA AVRILLISA", kelas: "X-4", nis: "-" },
+            { nama: "NOVELIANA LISMAWATI", kelas: "X-4", nis: "-" },
+            { nama: "NUR LAILATUL QOMARIAH", kelas: "X-4", nis: "-" },
+            { nama: "PUTRI DWI ANDINI", kelas: "X-4", nis: "-" },
+            { nama: "RAHMATUL WAHYU SYIVAROH", kelas: "X-4", nis: "-" },
+            { nama: "REVVY PURNAMASARI", kelas: "X-4", nis: "-" },
+            { nama: "SHOFA DELLA RISTA", kelas: "X-4", nis: "-" },
+            { nama: "SITI UMAISYAROH", kelas: "X-4", nis: "-" },
+            { nama: "SOFIAN AHMAD HASAN", kelas: "X-4", nis: "-" },
+            { nama: "TANO FLORADANASTYA", kelas: "X-4", nis: "-" },
+            { nama: "VELLY MILA SHYERINA", kelas: "X-4", nis: "-" },
+            { nama: "VIONA NUR EKA PRATIWI", kelas: "X-4", nis: "-" },
+            { nama: "ABIL FAKHUROZI TAHIR", kelas: "X-5", nis: "-" },
+            { nama: "AISYAH UMI ZAHRO", kelas: "X-5", nis: "-" },
+            { nama: "AMELIA AZZAHRA", kelas: "X-5", nis: "-" },
+            { nama: "ARDELIA TSABITAH", kelas: "X-5", nis: "-" },
+            { nama: "BUNGA SILVI FANESA", kelas: "X-5", nis: "-" },
+            { nama: "DEVANO ERIC SEBASTIAN", kelas: "X-5", nis: "-" },
+            { nama: "DIKI IRAWAN", kelas: "X-5", nis: "-" },
+            { nama: "DIMAS ADWA RAMADHAN", kelas: "X-5", nis: "-" },
+            { nama: "DINDA AYU LESTARI", kelas: "X-5", nis: "-" },
+            { nama: "DWI INDAH SARI", kelas: "X-5", nis: "-" },
+            { nama: "FREEYA INSYIRAH FILZIE", kelas: "X-5", nis: "-" },
+            { nama: "HOZAKY ADITIA", kelas: "X-5", nis: "-" },
+            { nama: "IHWANDRA RENATA ARDIANSYAH", kelas: "X-5", nis: "-" },
+            { nama: "INDAH SHOLEHA MAHARANY GUNAWAN", kelas: "X-5", nis: "-" },
+            { nama: "INTAN", kelas: "X-5", nis: "-" },
+            { nama: "LAILI DWI NUR FITRIA", kelas: "X-5", nis: "-" },
+            { nama: "MARDA SARI", kelas: "X-5", nis: "-" },
+            { nama: "MAYLA PUTRI PERDANI", kelas: "X-5", nis: "-" },
+            { nama: "MOCHAMAD KHADAFI", kelas: "X-5", nis: "-" },
+            { nama: "MUHAMMAD AKBAR DANIEL HARYENT", kelas: "X-5", nis: "-" },
+            { nama: "MUHAMMAD RISKY NUR ARDIANSYAH", kelas: "X-5", nis: "-" },
+            { nama: "NANDA ALDI RESTI PRATAMA", kelas: "X-5", nis: "-" },
+            { nama: "NASYA AULIA RAMADHANI", kelas: "X-5", nis: "-" },
+            { nama: "NAURAH IFFAH FAKHIRAH", kelas: "X-5", nis: "-" },
+            { nama: "NURIYATUL DHOIFA", kelas: "X-5", nis: "-" },
+            { nama: "PUTRI AGNIE DEMAYRA", kelas: "X-5", nis: "-" },
+            { nama: "SEPTIAN KHOLIFATUS SAADAH", kelas: "X-5", nis: "-" },
+            { nama: "SHECILIA PUTRI", kelas: "X-5", nis: "-" },
+            { nama: "SINTIA TRI AGUSTIN", kelas: "X-5", nis: "-" },
+            { nama: "SITI NUR HOLIFAH", kelas: "X-5", nis: "-" },
+            { nama: "TOMY SETIAWAN", kelas: "X-5", nis: "-" },
+            { nama: "TRI ANGGA ALFARIZI", kelas: "X-5", nis: "-" },
+            { nama: "VALENSIYA AFGASARI", kelas: "X-5", nis: "-" },
+            { nama: "YELSI EFRILLIYA", kelas: "X-5", nis: "-" },
+            { nama: "YUNITA AYU KUMALA", kelas: "X-5", nis: "-" },
+            { nama: "ADINDA NURUL ISTIQOMAH", kelas: "X-6", nis: "-" },
+            { nama: "AHMAD AMRULLAH ASAD", kelas: "X-6", nis: "-" },
+            { nama: "ANATASYA", kelas: "X-6", nis: "-" },
+            { nama: "ANDILA NOER BERLIANA", kelas: "X-6", nis: "-" },
+            { nama: "ANDREAN SYAHPUTRA", kelas: "X-6", nis: "-" },
+            { nama: "ARYA ABIYYU PRANAJA", kelas: "X-6", nis: "-" },
+            { nama: "AULIA SYAFIRA PUTRI YORDIANSYAH", kelas: "X-6", nis: "-" },
+            { nama: "BAHTIAR YUSUF HABIBI", kelas: "X-6", nis: "-" },
+            { nama: "BELLA ALIFIA PRISTY", kelas: "X-6", nis: "-" },
+            { nama: "BILQIS NAFISA ESTIANTY", kelas: "X-6", nis: "-" },
+            { nama: "CAHYA SATRIYA VIRA BAKTI", kelas: "X-6", nis: "-" },
+            { nama: "CHIKA QOTRUNNADA RAMADHANI", kelas: "X-6", nis: "-" },
+            { nama: "CINTA MELLANI FEBRIASYIFA", kelas: "X-6", nis: "-" },
+            { nama: "DIAH AYU TRISNA SIWI", kelas: "X-6", nis: "-" },
+            { nama: "ESTA URMANI", kelas: "X-6", nis: "-" },
+            { nama: "FAHMI AGUNG DERMAWAN", kelas: "X-6", nis: "-" },
+            { nama: "FAJAR BANYU WIJAYA", kelas: "X-6", nis: "-" },
+            { nama: "FARID EVAN PRANAJA ISAD", kelas: "X-6", nis: "-" },
+            { nama: "GHEA ANANTA SALSABILLA PUTRI BUDIANTO", kelas: "X-6", nis: "-" },
+            { nama: "GICELA AULIANDISA ARTARI", kelas: "X-6", nis: "-" },
+            { nama: "GISKA TRI DEWI ROHMAH", kelas: "X-6", nis: "-" },
+            { nama: "GLADIS AMELIA AMANDA PUTRI", kelas: "X-6", nis: "-" },
+            { nama: "IRMA ZULIANTI", kelas: "X-6", nis: "-" },
+            { nama: "JUAN AUBIN FAIRUZ", kelas: "X-6", nis: "-" },
+            { nama: "KHARISA OLIVIA WULANDARI", kelas: "X-6", nis: "-" },
+            { nama: "LAILA TRI WAHYUNI", kelas: "X-6", nis: "-" },
+            { nama: "LEVI OKTAFIANSYA", kelas: "X-6", nis: "-" },
+            { nama: "MUHAMMAD ALVITO ANDRIANSYAH", kelas: "X-6", nis: "-" },
+            { nama: "MUHAMMAD ASEP MAULANA", kelas: "X-6", nis: "-" },
+            { nama: "NANDA DEWI OKTARANI", kelas: "X-6", nis: "-" },
+            { nama: "PUTRI AHZARO ISNAINI", kelas: "X-6", nis: "-" },
+            { nama: "SALSABILA FAISATUS KAROMA", kelas: "X-6", nis: "-" },
+            { nama: "SAMIDATUL AMALIA", kelas: "X-6", nis: "-" },
+            { nama: "SHEELA NATHANIA AZALEA RAMADHANIA", kelas: "X-6", nis: "-" },
+            { nama: "SITI NUR HOLISAH", kelas: "X-6", nis: "-" },
+            { nama: "VINA FITRIA ANGGRAENI", kelas: "X-6", nis: "-" },
+            { nama: "ACHMAD NAUFAL NAZHIF", kelas: "X-7", nis: "-" },
+            { nama: "ALDIANSYAH ANGGARA", kelas: "X-7", nis: "-" },
+            { nama: "ANDRIAN RICO HIDAYAT", kelas: "X-7", nis: "-" },
+            { nama: "AULIA JULY DWITARIZKI", kelas: "X-7", nis: "-" },
+            { nama: "AURELLIA NUR AZIZA", kelas: "X-7", nis: "-" },
+            { nama: "BAGUS ADI PRANATA", kelas: "X-7", nis: "-" },
+            { nama: "DIEGO FALEN IDFIANO WICAKSONO", kelas: "X-7", nis: "-" },
+            { nama: "EVAN MARVINO", kelas: "X-7", nis: "-" },
+            { nama: "FAHMI TAUFIK", kelas: "X-7", nis: "-" },
+            { nama: "FAHRIANSYAH", kelas: "X-7", nis: "-" },
+            { nama: "GIANINA MAHIRA", kelas: "X-7", nis: "-" },
+            { nama: "ISABILLAH AULIYA AGUSTIN", kelas: "X-7", nis: "-" },
+            { nama: "LINTANG OCKTININGTYA FIRDHA", kelas: "X-7", nis: "-" },
+            { nama: "LOLA ANGELINA DWI ISWANDOYO", kelas: "X-7", nis: "-" },
+            { nama: "LUNA TIARA SUKMA", kelas: "X-7", nis: "-" },
+            { nama: "M IBRAHIM MUWAFFIQ ARIFIN", kelas: "X-7", nis: "-" },
+            { nama: "MAISYIFA SALSABILA", kelas: "X-7", nis: "-" },
+            { nama: "MELVI ZIPPY MELLANIK", kelas: "X-7", nis: "-" },
+            { nama: "MUHAMMAD IZZA RAFIAH", kelas: "X-7", nis: "-" },
+            { nama: "NABIL AL FIKRI", kelas: "X-7", nis: "-" },
+            { nama: "NADIA PUTRI NURAMTI", kelas: "X-7", nis: "-" },
+            { nama: "NAURA SYAFINA BIWI ISTIANA SYAIFUL", kelas: "X-7", nis: "-" },
+            { nama: "NIKITA PUTRI APRILIA PRANOTO", kelas: "X-7", nis: "-" },
+            { nama: "NOVALIA WIDIASTUTIK", kelas: "X-7", nis: "-" },
+            { nama: "NUR AFITA RAMADHANI", kelas: "X-7", nis: "-" },
+            { nama: "PUTRI MAULIA HASANAH", kelas: "X-7", nis: "-" },
+            { nama: "QUINN NORIZ ELMIRA SANTOSO", kelas: "X-7", nis: "-" },
+            { nama: "RAFI LUKMAN AZIZ", kelas: "X-7", nis: "-" },
+            { nama: "RAIHAN FEBRIAN PRATAMA", kelas: "X-7", nis: "-" },
+            { nama: "REFIN NATUSHOLEHA", kelas: "X-7", nis: "-" },
+            { nama: "REVA MAULIDYA PRATAMA", kelas: "X-7", nis: "-" },
+            { nama: "RIA YUNIAR INDAH PUSPITASARI", kelas: "X-7", nis: "-" },
+            { nama: "RIFATUS SHOLIHAH", kelas: "X-7", nis: "-" },
+            { nama: "ROFITA MAULIDIAH SAHUDIN", kelas: "X-7", nis: "-" },
+            { nama: "SILA", kelas: "X-7", nis: "-" },
+            { nama: "SITI ROHMATUN BADRIYAH", kelas: "X-7", nis: "-" },
+            { nama: "ABI MANYU UMAR BENZEMA", kelas: "X-8", nis: "-" },
+            { nama: "ADRIAN HARTANTO", kelas: "X-8", nis: "-" },
+            { nama: "AI ROSA", kelas: "X-8", nis: "-" },
+            { nama: "ALVINO DWI OKTAVIAN", kelas: "X-8", nis: "-" },
+            { nama: "AMELIA AZKA HAFIZHAH", kelas: "X-8", nis: "-" },
+            { nama: "AURELIA PASYA ENJELICA", kelas: "X-8", nis: "-" },
+            { nama: "AVIANA FARAH HAMIDAH", kelas: "X-8", nis: "-" },
+            { nama: "AZURA SINAR LARINDA", kelas: "X-8", nis: "-" },
+            { nama: "DISCA MAURA MEILANY SAPUTRI", kelas: "X-8", nis: "-" },
+            { nama: "DWI RAHMAWATI", kelas: "X-8", nis: "-" },
+            { nama: "ELLADORA CHOERLYA AURORA", kelas: "X-8", nis: "-" },
+            { nama: "FIOLITA AULIA PUTRI EFINDA", kelas: "X-8", nis: "-" },
+            { nama: "FRIDA NAYLA IZA HARTONO", kelas: "X-8", nis: "-" },
+            { nama: "GIEN ARUM SETYORINI", kelas: "X-8", nis: "-" },
+            { nama: "LAILY BAROKATUL MAGFIROH", kelas: "X-8", nis: "-" },
+            { nama: "MAULA DAFFA IHSANI", kelas: "X-8", nis: "-" },
+            { nama: "MEI WULANDARI", kelas: "X-8", nis: "-" },
+            { nama: "MUHAMMAD JUANDA FIRMANSYAH", kelas: "X-8", nis: "-" },
+            { nama: "MUHAMMAD REYZA GHANY FIRMANDA", kelas: "X-8", nis: "-" },
+            { nama: "NADIF ASWA RAM ALI VAD AQ", kelas: "X-8", nis: "-" },
+            { nama: "NADYA SOFWAH RAMADHANI", kelas: "X-8", nis: "-" },
+            { nama: "NAYLATUS SAIDAH", kelas: "X-8", nis: "-" },
+            { nama: "NUR AZIZAH ALIYAH", kelas: "X-8", nis: "-" },
+            { nama: "PUTRI AGUSTINA ALDANISYAH", kelas: "X-8", nis: "-" },
+            { nama: "RAMA SAPUTRA ADITIA", kelas: "X-8", nis: "-" },
+            { nama: "RANI SHAFIRA LIMARTA", kelas: "X-8", nis: "-" },
+            { nama: "RIKA AYU NOVITASARI", kelas: "X-8", nis: "-" },
+            { nama: "SAFA AULIA", kelas: "X-8", nis: "-" },
+            { nama: "SEPTI VICI AHIRA", kelas: "X-8", nis: "-" },
+            { nama: "SHARAVI MAGHFUR ROMADLON", kelas: "X-8", nis: "-" },
+            { nama: "SILFI NOVIYANASARI", kelas: "X-8", nis: "-" },
+            { nama: "SITI NURHALISA", kelas: "X-8", nis: "-" },
+            { nama: "SRI MULYANI", kelas: "X-8", nis: "-" },
+            { nama: "VALENTINO ROSI ABDILLAH", kelas: "X-8", nis: "-" },
+            { nama: "WILDHAN JANUAR PRATAMA", kelas: "X-8", nis: "-" },
+            { nama: "YOSINANDA AUFIN NURIL HUBBI", kelas: "X-8", nis: "-" }
+        ];
+
+        let currentUser = null; // 'guru' or object student
+        let currentClass = '';
+        let currentElement = 'quran';
+
+        // DATABASE IN MEMORY (Loaded from LocalStorage)
+        let dbSiswa = [...INITIAL_STUDENTS]; 
+        let dbNilai = {}; // Key: kelas_nama_elemen -> {p, k, s, desc}
+        let dbTugas = []; // [{id, title, desc, link, kelas, date}]
+        let dbPengumpulan = []; // [{taskId, nama, kelas, link, date}]
+
+        // --- INISIALISASI ---
+        document.addEventListener('DOMContentLoaded', () => {
+            loadData();
+            initSelectors();
+            checkSession();
+        });
+
+        function loadData() {
+            const storedSiswa = localStorage.getItem('pai_db_siswa');
+            const storedNilai = localStorage.getItem('pai_db_nilai');
+            const storedTugas = localStorage.getItem('pai_db_tugas');
+            const storedPengumpulan = localStorage.getItem('pai_db_pengumpulan');
+            
+            if (storedSiswa) {
+                const parsed = JSON.parse(storedSiswa);
+                if (parsed && parsed.length > 0) {
+                    dbSiswa = parsed; // Use stored data if it exists
+                }
+            } else {
+                saveData(); // Save the initially provided Excel data
+            }
+            
+            if (storedNilai) dbNilai = JSON.parse(storedNilai);
+            if (storedTugas) dbTugas = JSON.parse(storedTugas);
+            if (storedPengumpulan) dbPengumpulan = JSON.parse(storedPengumpulan);
+        }
+
+        function saveData() {
+            localStorage.setItem('pai_db_siswa', JSON.stringify(dbSiswa));
+            localStorage.setItem('pai_db_nilai', JSON.stringify(dbNilai));
+            localStorage.setItem('pai_db_tugas', JSON.stringify(dbTugas));
+            localStorage.setItem('pai_db_pengumpulan', JSON.stringify(dbPengumpulan));
+        }
+
+        function initSelectors() {
+            // Populate Class Dropdowns
+            const classSelects = ['global-kelas', 'task-class', 'login-siswa-kelas', 'manual-student-class'];
+            classSelects.forEach(id => {
+                const el = document.getElementById(id);
+                if(el) {
+                    el.innerHTML = (id === 'task-class' || id === 'manual-student-class') ? '' : '<option value="">-- Pilih Kelas --</option>';
+                    CLASS_LIST.forEach(cls => {
+                        const opt = document.createElement('option');
+                        opt.value = cls;
+                        opt.textContent = cls;
+                        el.appendChild(opt);
+                    });
+                }
+            });
+
+            // Populate Element Buttons
+            const elContainer = document.getElementById('element-selector');
+            if(elContainer) {
+                elContainer.innerHTML = '';
+                ELEMENTS.forEach(el => {
+                    const btn = document.createElement('button');
+                    btn.className = `p-2 rounded-lg text-xs font-bold transition-all border ${currentElement === el.id ? 'bg-emerald-600 text-white border-emerald-600 shadow-md' : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50'}`;
+                    btn.textContent = el.name;
+                    btn.onclick = () => switchElement(el.id);
+                    elContainer.appendChild(btn);
+                });
+            }
+        }
+
+        // --- NAVIGASI & UI ---
+        function switchView(viewId) {
+            document.querySelectorAll('body > div[id^="view-"]').forEach(el => {
+                el.classList.add('hidden');
+            });
+            document.getElementById(viewId).classList.remove('hidden');
+            
+            // Sidebar active state update
+            document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active', 'bg-emerald-800', 'text-white'));
+            
+            if(viewId === 'view-guru' && currentClass) renderBulkTable();
+            if(viewId === 'view-kelola-tugas') renderTaskList();
+            if(viewId === 'view-data-siswa') renderStudentPreview();
+        }
+
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('open');
+        }
+
+        function showToast(msg) {
+            const t = document.getElementById('toast');
+            t.textContent = msg;
+            t.classList.add('show');
+            setTimeout(() => t.classList.remove('show'), 3000);
+        }
+
+        // --- LOGIC GURU ---
+        function handleGuruLogin(e) {
+            e.preventDefault();
+            const user = document.getElementById('guru-username').value;
+            const pass = document.getElementById('guru-password').value;
+            if (user && pass === '12345') {
+                currentUser = user;
+                document.getElementById('guru-name-display').textContent = user;
+                switchView('view-guru');
+                showToast("Selamat datang, " + user);
+            } else {
+                showToast('Password Salah! (Default: 12345)');
+            }
+        }
+
+        function handleClassChange() {
+            currentClass = document.getElementById('global-kelas').value;
+            document.getElementById('bulk-class-label').textContent = currentClass;
+            document.getElementById('rekap-class-label').textContent = currentClass;
+            renderBulkTable();
+            renderRekapTable();
+        }
+
+        function switchElement(elId) {
+            currentElement = elId;
+            const elData = ELEMENTS.find(e => e.id === elId);
+            
+            // Update UI buttons
+            const container = document.getElementById('element-selector');
+            Array.from(container.children).forEach((btn, idx) => {
+                const isMatch = ELEMENTS[idx].id === elId;
+                btn.className = `p-2 rounded-lg text-xs font-bold transition-all border ${isMatch ? 'bg-emerald-600 text-white border-emerald-600 shadow-md' : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50'}`;
+            });
+
+            document.getElementById('bulk-element-label').textContent = elData.name;
+            document.getElementById('topic-title').textContent = elData.name + ": " + elData.desc;
+            renderBulkTable();
+        }
+
+        // --- LOGIC INPUT NILAI (BULK) ---
+        function renderBulkTable() {
+            const tbody = document.getElementById('bulk-tbody');
+            tbody.innerHTML = '';
+            
+            if (!currentClass) return;
+
+            const students = dbSiswa.filter(s => s.kelas === currentClass);
+            
+            if (students.length === 0) {
+                document.getElementById('bulk-empty-msg').classList.remove('hidden');
+                return;
+            }
+            document.getElementById('bulk-empty-msg').classList.add('hidden');
+
+            students.forEach((s, idx) => {
+                const key = `${s.kelas}_${s.nama}_${currentElement}`;
+                const data = dbNilai[key] || { p: '', k: '', s: '', d: '' };
+
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td class="px-4 py-2 border-b font-medium text-gray-700">${idx+1}. ${s.nama}</td>
+                    <td class="px-1 py-2 border-b"><input type="number" name="p_${idx}" value="${data.p}" class="w-full text-center p-2 border rounded focus:ring-1 focus:ring-emerald-500 inp-p" min="0" max="100" placeholder="0"></td>
+                    <td class="px-1 py-2 border-b"><input type="number" name="k_${idx}" value="${data.k}" class="w-full text-center p-2 border rounded focus:ring-1 focus:ring-emerald-500 inp-k" min="0" max="100" placeholder="0"></td>
+                    <td class="px-2 py-2 border-b">
+                        <select name="s_${idx}" class="w-full p-2 border rounded text-xs inp-s bg-white">
+                            <option value="">-</option>
+                            <option value="SB" ${data.s === 'SB' ? 'selected' : ''}>Sangat Baik</option>
+                            <option value="B" ${data.s === 'B' ? 'selected' : ''}>Baik</option>
+                            <option value="C" ${data.s === 'C' ? 'selected' : ''}>Cukup</option>
+                        </select>
+                    </td>
+                    <td class="px-2 py-2 border-b"><input type="text" name="d_${idx}" value="${data.d || ''}" class="w-full text-xs p-2 border rounded text-gray-600 inp-d" placeholder="Otomatis..."></td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function saveBulkData(e) {
+            e.preventDefault();
+            if (!currentClass) return showToast('Pilih Kelas Dulu');
+            
+            const students = dbSiswa.filter(s => s.kelas === currentClass);
+            const inputsP = document.querySelectorAll('.inp-p');
+            const inputsK = document.querySelectorAll('.inp-k');
+            const inputsS = document.querySelectorAll('.inp-s');
+            const inputsD = document.querySelectorAll('.inp-d');
+
+            let count = 0;
+            students.forEach((s, idx) => {
+                const pVal = inputsP[idx].value;
+                const kVal = inputsK[idx].value;
+                const sVal = inputsS[idx].value;
+                
+                // Generate Deskripsi Otomatis jika nilai ada
+                let desc = inputsD[idx].value;
+                if (!desc && pVal && kVal) {
+                    const avg = (parseInt(pVal) + parseInt(kVal)) / 2;
+                    const elName = ELEMENTS.find(e => e.id === currentElement).name;
+                    if (avg >= 90) desc = `Sangat baik menguasai ${elName}.`;
+                    else if (avg >= 80) desc = `Baik dalam materi ${elName}.`;
+                    else if (avg >= 70) desc = `Cukup menguasai ${elName}, perlu ditingkatkan.`;
+                    else desc = `Perlu bimbingan dalam ${elName}.`;
+                }
+
+                if (pVal || kVal) {
+                    const key = `${s.kelas}_${s.nama}_${currentElement}`;
+                    dbNilai[key] = { p: pVal, k: kVal, s: sVal, d: desc };
+                    count++;
+                }
+            });
+
+            saveData();
+            showToast(`Berhasil menyimpan ${count} data nilai.`);
+            renderBulkTable();
+            renderRekapTable(); // Update rekap if open
+        }
+
+        function autoFillAttitude() {
+            document.querySelectorAll('.inp-s').forEach(sel => sel.value = 'B');
+        }
+
+        function copyDown(type) {
+            const inputs = document.querySelectorAll(type === 'b_p' ? '.inp-p' : '.inp-k');
+            if(inputs.length > 0) {
+                const firstVal = inputs[0].value;
+                inputs.forEach(inp => inp.value = firstVal);
+            }
+        }
+
+        function renderRekapTable() {
+            const tbody = document.getElementById('rekap-tbody');
+            tbody.innerHTML = '';
+            if(!currentClass) return;
+
+            const students = dbSiswa.filter(s => s.kelas === currentClass);
+            students.forEach((s, idx) => {
+                const key = `${s.kelas}_${s.nama}_${currentElement}`;
+                const data = dbNilai[key];
+
+                if(data) {
+                    const avg = Math.round((Number(data.p) + Number(data.k))/2);
+                    let predikat = 'D';
+                    if(avg >= 92) predikat = 'A';
+                    else if(avg >= 83) predikat = 'B';
+                    else if(avg >= 75) predikat = 'C';
+
+                    const tr = document.createElement('tr');
+                    tr.className = idx % 2 === 0 ? 'bg-white' : 'bg-gray-50';
+                    tr.innerHTML = `
+                        <td class="p-3 border text-center">${idx+1}</td>
+                        <td class="p-3 border font-medium">${s.nama}</td>
+                        <td class="p-3 border text-center font-bold text-emerald-700 bg-emerald-50">${avg}</td>
+                        <td class="p-3 border text-center">${predikat}</td>
+                        <td class="p-3 border text-center">${data.s || '-'}</td>
+                        <td class="p-3 border text-xs text-gray-600 italic">${data.d || '-'}</td>
+                    `;
+                    tbody.appendChild(tr);
+                }
+            });
+            
+            // Update print headers
+            document.getElementById('print-class').textContent = currentClass;
+            document.getElementById('print-element').textContent = ELEMENTS.find(e => e.id === currentElement).name;
+        }
+
+        function clearClassData() {
+            if(confirm('Yakin hapus nilai kelas ini untuk elemen yang dipilih?')) {
+                const students = dbSiswa.filter(s => s.kelas === currentClass);
+                students.forEach(s => {
+                    const key = `${s.kelas}_${s.nama}_${currentElement}`;
+                    delete dbNilai[key];
+                });
+                saveData();
+                renderBulkTable();
+                renderRekapTable();
+                showToast('Data nilai dihapus.');
+            }
+        }
+
+        // --- LOGIC DATA SISWA (EXCEL) ---
+        function handleExcelUpload(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const data = new Uint8Array(e.target.result);
+                const workbook = XLSX.read(data, {type: 'array'});
+                const firstSheetName = workbook.SheetNames[0];
+                const worksheet = workbook.Sheets[firstSheetName];
+                const jsonData = XLSX.utils.sheet_to_json(worksheet);
+
+                // Mapping and cleaning
+                let newCount = 0;
+                jsonData.forEach(row => {
+                    // Adapt key names based on common excel headers (insensitive)
+                    const nama = row['Nama'] || row['nama'] || row['NAMA'];
+                    const kelas = row['Kelas'] || row['kelas'] || row['KELAS'];
+                    const nis = row['NIS'] || row['nis'] || '';
+
+                    if (nama && kelas) {
+                        // Check duplicate
+                        const exists = dbSiswa.some(s => s.nama === nama && s.kelas === kelas);
+                        if (!exists) {
+                            dbSiswa.push({ nama, kelas, nis });
+                            newCount++;
+                        }
+                    }
+                });
+
+                saveData();
+                document.getElementById('upload-status').classList.remove('hidden');
+                document.getElementById('upload-status').textContent = `Sukses! ${newCount} siswa ditambahkan.`;
+                document.getElementById('upload-status').classList.remove('text-red-500');
+                document.getElementById('upload-status').classList.add('text-green-600');
+                document.getElementById('upload-status').classList.remove('hidden');
+                renderStudentPreview();
+            };
+            reader.readAsArrayBuffer(file);
+        }
+
+        // --- NEW: LOGIC ADD STUDENT MANUAL ---
+        function handleAddStudent(e) {
+            e.preventDefault();
+            const cls = document.getElementById('manual-student-class').value;
+            const name = document.getElementById('manual-student-name').value;
+            const nis = document.getElementById('manual-student-nis').value;
+
+            if (cls && name) {
+                // Check duplicate
+                const exists = dbSiswa.some(s => s.nama === name && s.kelas === cls);
+                if (exists) {
+                    alert('Siswa dengan nama ini sudah ada di kelas tersebut!');
+                    return;
+                }
+
+                dbSiswa.push({ nama: name, kelas: cls, nis: nis || '-' });
+                saveData();
+                renderStudentPreview();
+                showToast(`Siswa ${name} berhasil ditambahkan!`);
+                
+                // Clear inputs except class for faster entry
+                document.getElementById('manual-student-name').value = '';
+                document.getElementById('manual-student-nis').value = '';
+                document.getElementById('manual-student-name').focus();
+            }
+        }
+
+        function deleteStudent(idx) {
+            if(confirm('Yakin ingin menghapus siswa ini? Data nilai juga akan terhapus.')) {
+                // Remove student
+                const s = dbSiswa[idx];
+                // Also remove associated grades to keep DB clean
+                ELEMENTS.forEach(el => {
+                    const key = `${s.kelas}_${s.nama}_${el.id}`;
+                    delete dbNilai[key];
+                });
+                
+                dbSiswa.splice(idx, 1); // Remove from array
+                saveData();
+                renderStudentPreview();
+                showToast('Siswa dihapus.');
+            }
+        }
+
+        function renderStudentPreview() {
+            const tbody = document.getElementById('student-preview-body');
+            tbody.innerHTML = '';
+            
+            // Show all students, maybe paginated or just reversed list
+            // For simplicity showing last 20 added or based on a filter? 
+            // Let's show all but scrollable. reversed to show newest first.
+            
+            const reversedList = [...dbSiswa].reverse(); 
+            // Note: index in dbSiswa is length - 1 - displayedIndex
+            
+            if(reversedList.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="5" class="text-center py-4 text-gray-400">Belum ada data siswa.</td></tr>';
+                return;
+            }
+
+            reversedList.forEach((s, i) => {
+                const originalIndex = dbSiswa.length - 1 - i;
+                tbody.innerHTML += `
+                    <tr class="hover:bg-gray-50 group">
+                        <td class="px-6 py-3 text-gray-500">${i+1}</td>
+                        <td class="px-6 py-3 font-medium text-gray-800">${s.nama}</td>
+                        <td class="px-6 py-3"><span class="bg-emerald-100 text-emerald-800 py-1 px-2 rounded text-xs font-bold">${s.kelas}</span></td>
+                        <td class="px-6 py-3 text-gray-500">${s.nis || '-'}</td>
+                        <td class="px-6 py-3 text-center">
+                            <button onclick="deleteStudent(${originalIndex})" class="text-red-400 hover:text-red-600 hover:bg-red-50 p-2 rounded transition"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>`;
+            });
+        }
+        
+        // --- LOGIC TUGAS ---
+        function handleSaveTask(e) {
+            e.preventDefault();
+            const title = document.getElementById('task-title').value;
+            const desc = document.getElementById('task-desc').value;
+            const link = document.getElementById('task-link').value;
+            const kelas = document.getElementById('task-class').value;
+            
+            if(!kelas) {
+                showToast('Pilih kelas tujuan tugas!');
+                return;
+            }
+
+            dbTugas.unshift({
+                id: Date.now(),
+                title, desc, link, kelas,
+                date: new Date().toLocaleDateString('id-ID')
+            });
+            
+            saveData();
+            e.target.reset();
+            renderTaskList();
+            showToast('Tugas berhasil dikirim');
+        }
+
+        function renderTaskList() {
+            const container = document.getElementById('task-list-container');
+            container.innerHTML = '';
+            
+            if (dbTugas.length === 0) {
+                container.innerHTML = '<p class="text-gray-400 text-center italic py-8">Belum ada tugas.</p>';
+                return;
+            }
+
+            dbTugas.forEach((t, idx) => {
+                const submissionsCount = dbPengumpulan.filter(p => p.taskId === t.id).length;
+                
+                const div = document.createElement('div');
+                div.className = 'p-4 border border-gray-100 rounded-xl hover:bg-emerald-50 transition group relative';
+                div.innerHTML = `
+                    <div class="flex justify-between items-start">
+                        <div class="w-full">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-600 bg-emerald-100 px-2 py-1 rounded">${t.kelas}</span>
+                            <h4 class="font-bold text-gray-800 mt-1">${t.title}</h4>
+                            <p class="text-xs text-gray-500 mt-1 line-clamp-2">${t.desc}</p>
+                            <span class="text-[10px] text-gray-400 mt-2 block"><i class="far fa-clock"></i> ${t.date}</span>
+                            
+                            <div class="mt-3 pt-3 border-t border-gray-200 flex justify-between items-center">
+                                <button onclick="lihatPengumpulan(${t.id})" class="text-xs bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded-lg transition font-medium flex items-center gap-1 shadow-sm">
+                                    <i class="fas fa-inbox"></i> Pengumpulan (${submissionsCount})
+                                </button>
+                                <button onclick="deleteTask(${idx})" class="text-red-400 hover:text-red-600 p-2 rounded-full hover:bg-red-50 transition" title="Hapus Tugas"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function deleteTask(idx) {
+            if(confirm('Hapus tugas ini? Data pengumpulan siswa untuk tugas ini juga akan terhapus.')) {
+                const taskId = dbTugas[idx].id;
+                dbPengumpulan = dbPengumpulan.filter(p => p.taskId !== taskId); // Bersihkan riwayat pengumpulan
+                dbTugas.splice(idx, 1);
+                saveData();
+                renderTaskList();
+            }
+        }
+
+        // --- LOGIC SISWA ---
+        function populateSiswaNameSelect() {
+            const cls = document.getElementById('login-siswa-kelas').value;
+            const nameSelect = document.getElementById('login-siswa-nama');
+            nameSelect.innerHTML = '<option value="">-- Pilih Nama --</option>';
+            
+            if (cls) {
+                const students = dbSiswa.filter(s => s.kelas === cls);
+                students.sort((a,b) => a.nama.localeCompare(b.nama));
+                students.forEach(s => {
+                    const opt = document.createElement('option');
+                    opt.value = s.nama;
+                    opt.textContent = s.nama;
+                    nameSelect.appendChild(opt);
+                });
+                nameSelect.disabled = false;
+            } else {
+                nameSelect.disabled = true;
+            }
+        }
+
+        function handleSiswaLogin(e) {
+            e.preventDefault();
+            const cls = document.getElementById('login-siswa-kelas').value;
+            const name = document.getElementById('login-siswa-nama').value;
+            
+            if (cls && name) {
+                currentUser = { role: 'siswa', nama: name, kelas: cls };
+                renderSiswaDashboard();
+                switchView('view-siswa-dashboard');
+                showToast("Selamat datang, " + name);
+            }
+        }
+
+        function renderSiswaDashboard() {
+            const { nama, kelas } = currentUser;
+            document.getElementById('student-dash-name').textContent = nama;
+            document.getElementById('student-dash-class').textContent = kelas;
+
+            // 1. Calculate Stats & Rapor
+            const raporBody = document.getElementById('student-rapor-body');
+            raporBody.innerHTML = '';
+            
+            let totalScore = 0;
+            let count = 0;
+            let attitudes = [];
+            const labels = [];
+            const dataScores = [];
+
+            ELEMENTS.forEach(el => {
+                const key = `${kelas}_${nama}_${el.id}`;
+                const val = dbNilai[key];
+                
+                let p = 0, k = 0, avg = 0, ket = '-';
+                
+                if (val) {
+                    p = parseInt(val.p) || 0;
+                    k = parseInt(val.k) || 0;
+                    if(p > 0 || k > 0) {
+                        avg = (p + k) / 2;
+                        totalScore += avg;
+                        count++;
+                        attitudes.push(val.s);
+                        ket = avg >= 75 ? 'Tuntas' : 'Remidi';
+                    }
+                }
+
+                // Chart Data
+                labels.push(el.name);
+                dataScores.push(avg);
+
+                // Table Row
+                raporBody.innerHTML += `
+                    <tr>
+                        <td class="p-3 font-medium text-gray-700 border-b border-gray-50">${el.name}</td>
+                        <td class="p-3 text-center text-gray-600 border-b border-gray-50">${p || '-'}</td>
+                        <td class="p-3 text-center text-gray-600 border-b border-gray-50">${k || '-'}</td>
+                        <td class="p-3 text-right border-b border-gray-50"><span class="text-xs px-2 py-1 rounded ${ket === 'Tuntas' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}">${ket}</span></td>
+                    </tr>
+                `;
+            });
+
+            // Summary
+            const finalAvg = count > 0 ? Math.round(totalScore / count) : 0;
+            document.getElementById('student-avg-score').textContent = finalAvg;
+            
+            // Predicate Logic (Simplified Mode)
+            let modeAttitude = '-';
+            if (attitudes.length > 0) {
+                modeAttitude = attitudes.sort((a,b) => attitudes.filter(v => v===a).length - attitudes.filter(v => v===b).length).pop();
+            }
+            document.getElementById('student-predicate').textContent = modeAttitude || '-';
+
+            // 2. Render Chart
+            renderChart(labels, dataScores);
+
+            // 3. Render Tasks
+            const taskContainer = document.getElementById('student-task-list');
+            taskContainer.innerHTML = '';
+            const myTasks = dbTugas.filter(t => t.kelas === kelas);
+            
+            if(myTasks.length === 0) {
+                taskContainer.innerHTML = '<p class="text-center text-gray-400 text-sm py-4">Tidak ada tugas aktif.</p>';
+            } else {
+                myTasks.forEach(t => {
+                    const submission = dbPengumpulan.find(p => p.taskId === t.id && p.nama === nama && p.kelas === kelas);
+                    let actionHTML = '';
+                    
+                    let linkHTML = t.link ? `<a href="${t.link}" target="_blank" class="block w-full text-center bg-white border border-blue-500 text-blue-600 hover:bg-blue-50 py-2 rounded-lg text-xs font-bold mb-3 transition shadow-sm"><i class="fas fa-external-link-alt"></i> Buka Google Form / Link Tugas</a>` : '';
+                    
+                    if(submission) {
+                        actionHTML = `
+                            ${linkHTML}
+                            <div class="mt-3 p-3 bg-green-50 rounded-lg border border-green-200">
+                                <div class="flex items-center gap-1 text-green-700 text-xs font-bold mb-1">
+                                    <i class="fas fa-check-circle"></i> Berhasil Dikumpulkan
+                                </div>
+                                <p class="text-xs text-gray-600"><span class="font-bold">Bukti:</span> ${submission.link}</p>
+                                <p class="text-[10px] text-gray-400 mt-1">Pada: ${submission.date}</p>
+                                <button onclick="batalKumpulkan(${t.id})" class="mt-2 text-[10px] text-red-500 hover:underline"><i class="fas fa-times"></i> Batal Kumpulkan</button>
+                            </div>
+                        `;
+                    } else {
+                        actionHTML = `
+                            ${linkHTML}
+                            <div class="mt-3 flex flex-col gap-2">
+                                <input type="text" id="link-tugas-${t.id}" class="w-full text-xs p-2.5 border border-gray-300 rounded-lg outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500" placeholder="Paste Bukti Link ATAU ketik 'Selesai' jika via G-Form...">
+                                <button onclick="kumpulkanTugas(${t.id})" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-lg text-xs font-bold transition shadow-sm">
+                                    <i class="fas fa-paper-plane mr-1"></i> Kirim / Tandai Selesai
+                                </button>
+                            </div>
+                        `;
+                    }
+
+                    taskContainer.innerHTML += `
+                        <div class="p-4 bg-blue-50 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-blue-900 text-sm">${t.title}</h4>
+                            <p class="text-xs text-blue-800 mt-1 mb-3">${t.desc}</p>
+                            ${actionHTML}
+                            <div class="mt-3 text-[10px] text-blue-500 flex items-center gap-1"><i class="far fa-clock"></i> Dipublikasikan: ${t.date}</div>
+                        </div>
+                    `;
+                });
+            }
+        }
+
+        let chartInstance = null;
+        function renderChart(labels, data) {
+            const ctx = document.getElementById('studentChart').getContext('2d');
+            if (chartInstance) chartInstance.destroy();
+            
+            chartInstance = new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Capaian Kompetensi',
+                        data: data,
+                        backgroundColor: 'rgba(16, 185, 129, 0.2)',
+                        borderColor: '#059669',
+                        pointBackgroundColor: '#047857',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            angleLines: { color: 'rgba(0,0,0,0.05)' },
+                            grid: { color: 'rgba(0,0,0,0.05)' },
+                            suggestedMin: 0,
+                            suggestedMax: 100
+                        }
+                    },
+                    plugins: { legend: { display: false } }
+                }
+            });
+        }
+
+        // --- UTILITIES SYSTEM ---
+        function logout() {
+            currentUser = null;
+            switchView('view-landing');
+        }
+
+        function checkSession() {
+            // Placeholder: Check session if implementing real auth
+        }
+
+        function printPage() {
+            window.print();
+        }
+
+        function goBackFromInfo() {
+            if(currentUser) {
+                if(currentUser.role === 'siswa') switchView('view-siswa-dashboard');
+                else switchView('view-guru');
+            } else {
+                switchView('view-login-options');
+            }
+        }
+
+        // Backup & Restore
+        function downloadBackup() {
+            const data = {
+                siswa: dbSiswa,
+                nilai: dbNilai,
+                tugas: dbTugas,
+                pengumpulan: dbPengumpulan,
+                timestamp: new Date().toISOString()
+            };
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
+            const downloadAnchorNode = document.createElement('a');
+            downloadAnchorNode.setAttribute("href", dataStr);
+            downloadAnchorNode.setAttribute("download", "backup_pai_" + new Date().toISOString().slice(0,10) + ".json");
+            document.body.appendChild(downloadAnchorNode);
+            downloadAnchorNode.click();
+            downloadAnchorNode.remove();
+        }
+
+        function restoreBackup(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    if(data.siswa && data.nilai) {
+                        dbSiswa = data.siswa;
+                        dbNilai = data.nilai;
+                        dbTugas = data.tugas || [];
+                        dbPengumpulan = data.pengumpulan || [];
+                        saveData();
+                        showToast('Data berhasil dipulihkan!');
+                        setTimeout(() => location.reload(), 1000);
+                    } else {
+                        showToast('Format file salah!');
+                    }
+                } catch(err) {
+                    showToast('File rusak atau bukan JSON valid.');
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        function hardReset() {
+            if(confirm('PERINGATAN: Semua data (Siswa, Nilai, Tugas) akan dihapus permanen dari browser ini. Lanjutkan?')) {
+                localStorage.clear();
+                location.reload();
+            }
+        }
+
+        // --- FUNGSI PENGUMPULAN TUGAS ---
+        function kumpulkanTugas(taskId) {
+            const linkInput = document.getElementById(`link-tugas-${taskId}`);
+            if(!linkInput || !linkInput.value.trim()) {
+                showToast("Ketik keterangan / link terlebih dahulu!");
+                return;
+            }
+            
+            dbPengumpulan.push({
+                taskId: taskId,
+                nama: currentUser.nama,
+                kelas: currentUser.kelas,
+                link: linkInput.value.trim(),
+                date: new Date().toLocaleString('id-ID')
+            });
+            saveData();
+            showToast("Tugas berhasil dikumpulkan!");
+            renderSiswaDashboard(); // Refresh UI
+        }
+
+        function batalKumpulkan(taskId) {
+            if(confirm("Yakin ingin membatalkan pengumpulan tugas ini?")) {
+                dbPengumpulan = dbPengumpulan.filter(p => !(p.taskId === taskId && p.nama === currentUser.nama && p.kelas === currentUser.kelas));
+                saveData();
+                showToast("Pengumpulan tugas dibatalkan.");
+                renderSiswaDashboard(); // Refresh UI
+            }
+        }
+
+        // Modal Guru
+        function lihatPengumpulan(taskId) {
+            const modal = document.getElementById('modal-pengumpulan');
+            const tbody = document.getElementById('pengumpulan-tbody');
+            const header = document.getElementById('modal-pengumpulan-header');
+            tbody.innerHTML = '';
+            
+            const subs = dbPengumpulan.filter(p => p.taskId === taskId);
+            const task = dbTugas.find(t => t.id === taskId);
+            
+            header.innerHTML = `
+                <h3 class="font-bold text-gray-800 text-lg">Pengumpulan: ${task.title}</h3>
+                <div class="flex gap-2">
+                    <button onclick="exportPengumpulanExcel(${taskId})" class="bg-green-600 hover:bg-green-700 text-white text-xs px-3 py-2 rounded-lg shadow flex items-center gap-1 transition">
+                        <i class="fas fa-file-excel"></i> Export Excel
+                    </button>
+                    <button onclick="closeModalPengumpulan()" class="text-gray-500 hover:text-gray-800 p-1"><i class="fas fa-times text-xl"></i></button>
+                </div>
+            `;
+            
+            if(subs.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="4" class="p-8 text-center text-gray-500 italic"><i class="fas fa-inbox text-3xl mb-2 block text-gray-300"></i>Belum ada siswa yang mengumpulkan tugas ini.</td></tr>';
+            } else {
+                subs.forEach(s => {
+                    const isLink = s.link.startsWith('http://') || s.link.startsWith('https://');
+                    const linkHTML = isLink ? `<a href="${s.link}" target="_blank" rel="noopener noreferrer" class="bg-blue-100 text-blue-700 px-4 py-1.5 rounded-lg text-xs font-bold hover:bg-blue-200 inline-block transition-colors shadow-sm">Buka Link <i class="fas fa-external-link-alt ml-1"></i></a>` : `<span class="text-gray-600 font-medium">"${s.link}"</span>`;
+                    
+                    tbody.innerHTML += `
+                        <tr class="hover:bg-emerald-50 transition-colors">
+                            <td class="p-3 font-medium text-gray-800">${s.nama}</td>
+                            <td class="p-3"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs font-bold">${s.kelas}</span></td>
+                            <td class="p-3 text-xs text-gray-500"><i class="far fa-clock mr-1"></i> ${s.date}</td>
+                            <td class="p-3 text-center">${linkHTML}</td>
+                        </tr>
+                    `;
+                });
+            }
+            modal.classList.remove('hidden');
+        }
+
+        function closeModalPengumpulan() {
+            document.getElementById('modal-pengumpulan').classList.add('hidden');
+        }
+
+        function exportPengumpulanExcel(taskId) {
+            const task = dbTugas.find(t => t.id === taskId);
+            const subs = dbPengumpulan.filter(p => p.taskId === taskId);
+            
+            if(subs.length === 0) {
+                showToast('Belum ada data pengumpulan untuk diexport.');
+                return;
+            }
+            
+            // Format data for Excel
+            const wsData = subs.map((s, i) => ({
+                "No": i + 1,
+                "Nama Siswa": s.nama,
+                "Kelas": s.kelas,
+                "Waktu Pengumpulan": s.date,
+                "Keterangan / Link": s.link
+            }));
+            
+            const ws = XLSX.utils.json_to_sheet(wsData);
+            const wb = XLSX.utils.book_new();
+            XLSX.utils.book_append_sheet(wb, ws, "Pengumpulan Tugas");
+            
+            // Create a safe filename
+            const safeTitle = task.title.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+            XLSX.writeFile(wb, `Pengumpulan_${safeTitle}_${task.kelas}.xlsx`);
+            showToast("File Excel berhasil diunduh!");
+        }
+    </script>
+
+</body></html>
